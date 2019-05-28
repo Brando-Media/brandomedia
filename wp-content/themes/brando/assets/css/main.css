@@ -1,0 +1,419 @@
+@font-face {
+  font-family: "PangramBlack";
+  src: url("../fonts/Pangram-Black.eot");
+  src: url("../fonts/Pangram-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Pangram-Black.woff2") format("woff2"), url("../fonts/Pangram-Black.woff") format("woff"), url("../fonts/Pangram-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pangram";
+  src: url("../fonts/Pangram-Regular.eot");
+  src: url("../fonts/Pangram-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Pangram-Regular.woff2") format("woff2"), url("../fonts/Pangram-Regular.woff") format("woff"), url("../fonts/Pangram-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PangramLight";
+  src: url("../fonts/Pangram-ExtraLight.eot");
+  src: url("../fonts/Pangram-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Pangram-ExtraLight.woff2") format("woff2"), url("../fonts/Pangram-ExtraLight.woff") format("woff"), url("../fonts/Pangram-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+body {
+  font-family: "Pangram";
+  font-weight: normal;
+  font-style: normal;
+}
+
+p, .main-content ul {
+  font-size: 13px;
+  letter-spacing: -0.32px;
+}
+
+.container {
+  width: 95%;
+  max-width: 95%;
+}
+.container.container--small {
+  max-width: 85%;
+}
+
+.red-bg {
+  background: #d81516;
+}
+
+.pink-bg {
+  background: #f08482;
+}
+.pink-bg * {
+  color: #fff;
+}
+
+.blue-bg {
+  background: #1e3b4c;
+}
+.blue-bg * {
+  color: #74bdaf;
+}
+
+.green-bg {
+  background: #74bdaf;
+}
+.green-bg * {
+  color: #1e3b4c;
+}
+.green-bg .form-control {
+  border: 1px solid #1e3b4c;
+  color: #1e3b4c;
+}
+.green-bg .form-control::placeholder {
+  color: #1e3b4c;
+}
+.green-bg .btn-primary {
+  background: #1e3b4c !important;
+  color: #fff;
+}
+
+.white-bg * {
+  color: #1e3b4c;
+}
+
+.grey-bg {
+  background: #f5f5f5;
+}
+
+.btn {
+  border-radius: 0;
+  box-shadow: none !important;
+  border: 0;
+  padding: 8px 50px;
+}
+
+#wrapper.pink-default #main-menu ul > li a {
+  color: #d81516;
+}
+#wrapper.pink-default #main-menu ul > li a.active {
+  color: #fff;
+  transition: all 0.5s;
+}
+#wrapper.pink-default #logo img.red-logo {
+  opacity: 1;
+}
+#wrapper.pink-default #logo img.white-logo {
+  opacity: 0;
+}
+#wrapper.pink-default #footer a {
+  color: #d81516;
+}
+#wrapper.blue-default #main-menu ul > li a {
+  color: #fff;
+}
+#wrapper.blue-default #main-menu ul > li a.active {
+  color: #74BDAF;
+  transition: all 0.5s;
+}
+#wrapper.green-default #main-menu ul > li a {
+  color: #fff;
+}
+#wrapper.green-default #main-menu ul > li a.active {
+  color: #1E3B4C;
+  transition: all 0.5s;
+}
+#wrapper.white-default #main-menu ul > li a {
+  color: #d81516;
+}
+#wrapper.white-default #main-menu ul > li a.active {
+  color: #183647;
+  transition: all 0.5s;
+}
+#wrapper.white-default #logo img.red-logo {
+  opacity: 1;
+}
+#wrapper.white-default #logo img.white-logo {
+  opacity: 0;
+}
+#wrapper.white-default #footer a {
+  color: #d81516;
+}
+#wrapper.white-default #brando-container #brando {
+  color: #d81516;
+  transition: all 0.5s;
+}
+#wrapper #main-menu ul > li a {
+  font-family: "PangramBlack";
+  font-weight: 900;
+  font-style: normal;
+  font-size: 12px;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 30px;
+  z-index: 99;
+}
+
+#logo {
+  position: relative;
+}
+#logo img {
+  max-width: 50px;
+  transition: all 1.5s;
+}
+#logo img.red-logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+#main-menu ul > li {
+  float: left;
+  margin-right: 30px;
+}
+#main-menu ul > li:last-child {
+  margin-right: 0;
+}
+#main-menu ul > li a {
+  color: #fff;
+  text-transform: uppercase;
+  transition: color 1.5s;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-bottom: 30px;
+}
+#footer a {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "PangramBlack";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+#brando-container {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+#brando-container #brando {
+  color: #fff;
+  transform: rotate(-90deg);
+  display: inline-block;
+  position: absolute;
+  left: -33px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 900;
+  font-family: "PangramBlack";
+  font-style: normal;
+  letter-spacing: 3px;
+  transition: all 0.5s;
+}
+
+.section {
+  position: relative;
+}
+.section > .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.main-title {
+  font-size: 50px;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-family: "PangramBlack";
+  font-style: normal;
+  letter-spacing: -0.5px;
+}
+
+.title {
+  font-family: "PangramLight";
+  font-size: 35px;
+  font-weight: 200;
+  margin-bottom: 30px;
+}
+
+.work-item h5 {
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.list-service {
+  margin-bottom: 50px; }
+  .list-service:nth-child(5) {
+    margin-bottom: 0; }
+  .list-service:last-child {
+    margin-bottom: 0; }
+  .list-service h3 {
+    font-size: 35px;
+    font-family: 'PangramLight';
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: -0.35px; }
+  .list-service p {
+    font-size: 13px; }
+
+.form-control {
+  background: none;
+  border-radius: 0;
+}
+.form-control:focus {
+  background: none;
+  box-shadow: none;
+}
+
+textarea.form-control {
+  height: 108px;
+  resize: none;
+  font-size: 12px;
+  font-family: "Pangram";
+  font-weight: normal;
+  font-style: normal;
+  padding: 10px;
+}
+
+input.form-control {
+  height: 35px;
+  font-size: 12px;
+  font-family: "Pangram";
+  font-weight: normal;
+  font-style: normal;
+  padding: 10px;
+}
+
+.contact-form div.wpcf7-response-output {
+  margin: 20px 0;
+  text-align: center;
+  border: 0;
+  padding: 10px 15px;
+}
+.contact-form div.wpcf7-response-output.wpcf7-validation-errors, .contact-form div.wpcf7-response-output.wpcf7-acceptance-missing {
+  background: #d81516;
+  color: #fff;
+}
+.contact-form .ajax-loader {
+  position: absolute;
+  right: 170px;
+  top: 12px;
+}
+.contact-form .wpcf7 .row {
+  max-width: 532px;
+}
+.contact-form .wpcf7 .row .form-group {
+  margin-bottom: 8px;
+}
+.contact-form .wpcf7 .row .wpcf7-submit {
+  font-size: 12px;
+  font-family: "Pangram";
+  font-weight: normal;
+  font-style: normal;
+}
+.contact-form .wpcf7-form-control-wrap {
+  display: block;
+}
+.contact-form span.wpcf7-not-valid-tip {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  background: #d81516;
+  color: #fff;
+  font-size: 12px;
+  padding: 3px 12px;
+}
+
+.contact-details {
+  margin-top: 30px;
+}
+.contact-details p {
+  letter-spacing: 0;
+  margin-bottom: 32px;
+}
+.contact-details p:last-child {
+  margin-bottom: 0;
+}
+.contact-details p a:hover {
+  text-decoration: none;
+  color: #1e3b4c;
+}
+
+.work-item {
+  margin-bottom: 40px;
+}
+.work-item .work-item-block {
+  max-width: 480px;
+}
+.work-item .work-item-block img {
+  width: 100%;
+  margin-bottom: 11px;
+}
+.work-item .work-item-block h5 {
+  font-size: 12px;
+  font-family: "PangramBlack";
+  font-weight: 900;
+  font-style: normal;
+  margin: 0;
+  text-transform: uppercase;
+}
+.work-item .work-item-block h5 span {
+  font-family: "Pangram";
+  font-weight: normal;
+  font-style: normal;
+  text-transform: none;
+}
+
+.show-btn-block {
+  margin-top: 40px;
+}
+.show-btn-block .btn-block {
+  border: 4px solid #d81516;
+  color: #d81516;
+  font-size: 12px;
+  font-family: "PangramBlack";
+  font-weight: 900;
+  font-style: normal;
+  padding: 12px 0;
+  max-width: 156px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.project-description {
+  border-right: 1px solid #1e3b4c;
+}
+
+.work-completed {
+  padding-left: 55px;
+}
+
+.content-image {
+  max-width: 375px;
+  width: 100%;
+}
+
+.work-section-with-bg {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.right-content-work-block {
+  padding-left: 70px;
+}
+
+.left-content-work-block {
+  padding-right: 70px;
+}
+
+/*# sourceMappingURL=main.css.map */
