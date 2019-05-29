@@ -19,7 +19,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <?php require_once('BFI_Thumb.php'); ?>
         <?php wp_head(); ?>
-
+ 
         <!--[if lt IE 9]> <script src="<?php bloginfo('template_directory'); ?>/javascript/html5shiv.js"></script> <![endif]-->
         
     </head>
@@ -27,6 +27,9 @@
         <?php
         $class = '';
         if(is_singular('work')) $class = 'white-default';
+        if(get_sub_field('title') == 'Consultancy'){
+            $class = 'white-default';
+        }
         ?>
         <div id="wrapper" class="<?php echo $class; ?>">
             <header id="header">
