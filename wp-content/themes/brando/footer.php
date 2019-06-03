@@ -90,7 +90,7 @@
             section : '.js-section',
             sectionName:false,
             easing: "swing",
-            scrollSpeed: 1650,
+            scrollSpeed: 1350,
             scrollbars: true,
             overflowscroll: true,
             interstitialSection: ".header",
