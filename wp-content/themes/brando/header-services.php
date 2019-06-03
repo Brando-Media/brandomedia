@@ -48,13 +48,11 @@
                                     $sectionName = str_replace(' ', '', strtolower($title));
                                     $url = '#'.$sectionName;
                                     if(!is_page_template('front-page.php')) $url = get_bloginfo('url').$url;
-                                    if($sectionName == 'contact' || $sectionName == 'services'){
-                                    }
                                     ?>
                                     <?php if($sectionName == 'contact' || $sectionName == 'services'){ ?>
-                                        <li><a href="#" onclick='goToAnchor("<?php echo $sectionName ?>")'><?php echo $title ?></a></li>
+                                        <li><a href="<?php echo '#' . $sectionName; ?>"><?php echo $title ?></a></li>
                                     <?php }else{ ?>
-                                        <li><a href="<?php echo $url; ?>"><?php echo $title ?></a></li>
+                                        <li><a href="#" onclick='goToAnchor("<?php echo $sectionName ?>")'><?php echo $title ?></a></li>
                                     <?php } ?>
                                     
                                 <?php endwhile; ?>
