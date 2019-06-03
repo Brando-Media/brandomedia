@@ -37,4 +37,4 @@ get_header('services'); ?>
             }
         }
         ?>
-<?php get_footer(); ?>
+<?php get_footer('services'); ?>

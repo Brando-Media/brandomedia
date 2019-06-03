@@ -26,9 +26,12 @@
     <body <?php body_class(); ?>>
         <?php
         $class = '';
+        $domainurl = $_SERVER['HTTP_HOST'];
         if(is_singular('work')) $class = 'white-default';
         if(get_sub_field('title') == 'Consultancy'){
             $class = 'white-default';
+        }else if(get_sub_field('title') == 'About'){
+            $class = 'red-default';
         }
         ?>
         <div id="wrapper" class="<?php echo $class; ?>">

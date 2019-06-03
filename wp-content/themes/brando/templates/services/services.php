@@ -6,7 +6,7 @@ $sectionName = str_replace(' ', '', strtolower($title));
 ?>
 <section class="section <?php echo $bg; ?>-bg d-flex" data-section-name="<?php echo $sectionName; ?>">
     <div class="container container--small align-self-center">
-        <h2 class="main-title"><?php echo $title; ?></h2>
+        <h2 class="main-title"><?php if($title != 'Services'){echo $title;}; ?></h2>
         <?php if($services): ?>
             <div class="row" style="font-size:16px">
                 <?php foreach($services as $k=>$service): ?>

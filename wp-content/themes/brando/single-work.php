@@ -1,6 +1,6 @@
 <?php 
 $completed = get_field('what_we_done');
-get_header(); ?>
+get_header('services'); ?>
     <section class="section white-bg">
         <div class="container container--small main-content">
             <h1 class="main-title"><?php the_post(); the_title(); ?></h1>
@@ -37,4 +37,4 @@ get_header(); ?>
         }
         ?>
     </section>
-<?php get_footer(); ?>
+<?php get_footer('services'); ?>
