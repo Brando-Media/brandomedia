@@ -36,9 +36,9 @@
                         </div>
                     </div>
                 <?php endforeach; ?>
-                <div style="height:100px; z-index:100;">
-                <section id="buttonsection" class="section white-bg" data-section-name="show-more-work"  style="z-index:1; height:100px !important;">
-                <div class="col-lg-12 show-btn-block" style="height:100px;">
+                <div style="height:40px; z-index:100;">
+                <section id="buttonsection" class="section white-bg" data-section-name="show-more-work"  style="z-index:1; height:40px; !important;">
+                <div class="col-lg-12 show-btn-block" style="height:40px; margin-top:0px;">
                     <a id="brandoele" href="#featuredworks" class="btn-block show-more-work" onclick="goToAnchor('4')">Show More work</a>
                 </div>
                 <!--</section>-->
@@ -81,7 +81,10 @@ function goToAnchor(anchor) {
             if (e.deltaY < 0) {
                 var type = window.location.hash.substr(1);
                 if(type == 'show-more-work'){
-                    $.scrollify.move("#featuredwork");
+                    //$.scrollify.move("#featuredwork");
+                }
+                if(type == 'services'){
+                    //$.scrollify.move("#featuredwork");
                    // console.log('test');
                 }
                 if($.scrollify.isDisabled()){

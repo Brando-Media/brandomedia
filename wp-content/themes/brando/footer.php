@@ -82,7 +82,8 @@
                 });
             });
 
-            (function($){
+        //so code to disable scrollify on pages too big
+        /*    (function($){
             'use strict';
             var $section = $('.js-section');
             var $pager = $('#js-pager');
@@ -90,7 +91,7 @@
             section : '.js-section',
             sectionName:false,
             easing: "swing",
-            scrollSpeed: 1350,
+            scrollSpeed: 1500,
             scrollbars: true,
             overflowscroll: true,
             interstitialSection: ".header",
@@ -150,7 +151,7 @@
     }
 
     
-}(jQuery));
+}(jQuery));*/
        
         </script>
     </body>
