@@ -82,6 +82,25 @@
                 });
             });
 
+            $(document).ready(function(e){
+                var type = window.location.hash.substr(1);
+                $.scrollify.disable();
+                console.log(type);
+                $.scrollify(option);
+
+                $(".downarrow").click(function(){
+                    $.scrollify.next();
+                });
+
+            $(".uparrow").click(function(){
+                $.scrollify.move();
+            });
+                setTimeout(function(){
+                    $.scrollify.enable();
+                    $.scrollify.move("#" + type);
+                }, 200);
+            });
+
         //so code to disable scrollify on pages too big
         /*    (function($){
             'use strict';
