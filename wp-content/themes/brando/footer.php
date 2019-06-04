@@ -86,7 +86,6 @@
                 var type = window.location.hash.substr(1);
                 $.scrollify.disable();
                 console.log(type);
-                $.scrollify(option);
 
                 $(".downarrow").click(function(){
                     $.scrollify.next();
