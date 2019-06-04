@@ -79,7 +79,6 @@
                         $(this).text('Show More Work');
                         setTimeout(function(){
                             $.scrollify.enable();
-                            //$.scrollify.move("#services");
                         }, 500);
                     }
                     $.scrollify.update();

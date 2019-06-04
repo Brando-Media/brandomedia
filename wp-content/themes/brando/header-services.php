@@ -35,7 +35,7 @@
         <div id="wrapper" class="<?php echo $class; ?>">
             <header id="header">
                 <div class="container clearfix">
-                    <a href="http://brando.loc:8888/#home" id="logo" class="float-left">
+                    <a href="http://brando.media/#home" id="logo" class="float-left">
                         <img class="white-logo" src="<?php bloginfo('template_url') ?>/assets/images/logo-white.png" alt="Brando Media" title="Brando Media" />
                         <img class="red-logo" src="<?php bloginfo('template_url') ?>/assets/images/logo-red.png" alt="Brando Media" title="Brando Media" />
                     </a>
