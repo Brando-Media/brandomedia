@@ -50,12 +50,7 @@
                                     $url = '#'.$sectionName;
                                     if(!is_page_template('front-page.php')) $url = get_bloginfo('url').$url;
                                     ?>
-                                    <?php if($sectionName == 'contact' || $sectionName == 'services'){ ?>
-                                        <li><a href="<?php echo '#' . $sectionName; ?>"><?php echo $title ?></a></li>
-                                    <?php }else{ ?>
-                                        <li><a href="#" onclick='goToAnchor("<?php echo $sectionName ?>")'><?php echo $title ?></a></li>
-                                    <?php } ?>
-                                    
+                                    <li><a href="#" onclick='goToAnchor("<?php echo $sectionName ?>")'><?php echo $title ?></a></li>
                                 <?php endwhile; ?>
                             </ul>
                         </nav>
