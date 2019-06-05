@@ -31,7 +31,6 @@
         if(get_sub_field('title') == 'Consultancy'){
             $class = 'white-default';
         }
-        var_dump($domainurl);
         ?>
         <div id="wrapper" class="<?php echo $class; ?>">
             <header id="header">
