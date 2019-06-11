@@ -3,7 +3,7 @@
 Template Name: Front Page
 */
 get_header(); ?>
-    <section class="section red-bg" data-section-name="home"><div><img class="white-logo" style="max-width:100vw; min-width:100vw; max-height:100vh;" src="<?php bloginfo('template_url') ?>/assets/images/home.gif" alt="Brando Media" title="Brando Media" /><div></section>
+    <section class="section red-bg" data-section-name="home"><div style="margin:auto 0;"><img class="white-logo" style="max-height: 100%;  max-width: 100%; width: auto;height: auto;position: absolute;  top: 0;  bottom: 0;  left: 0;  right: 0;  margin: auto;" src="<?php bloginfo('template_url') ?>/assets/images/home.gif" alt="Brando Media" title="Brando Media" /><div></section>
     <?php 
     if(have_rows('content')){
         while(have_rows('content')){
