@@ -88,8 +88,8 @@
 
             $(document).ready(function(e){
                 var type = window.location.hash.substr(1);
-                //$.scrollify.disable();
-                console.log(type);
+                $.scrollify.disable();
+                //console.log(type);
 
                 $(".downarrow").click(function(){
                     $.scrollify.next();
