@@ -177,40 +177,24 @@
 }(jQuery));*/
 $(function() {
     $.scrollify({
-                        section : ".section",
-                        before: function(i, el){
-                            var nextEl = $(el[i]);
-                            var wrapperClass = '';
-                            if(nextEl.hasClass('red-bg')){
-                                wrapperClass = 'red-default';
-                            }
-                            else if(nextEl.hasClass('pink-bg')){
-                                wrapperClass = 'pink-default';
-                            }
-                            else if(nextEl.hasClass('blue-bg')){
-                                wrapperClass = 'blue-default';
-                            }
-                            else if(nextEl.hasClass('green-bg')){
-                                wrapperClass = 'green-default';
-                            }
-                            else if(nextEl.hasClass('white-bg')){
-                                wrapperClass = 'white-default';
-                            }
-
-                            $('#wrapper').removeAttr('class');
-                            $('#wrapper').addClass(wrapperClass);
-                            $('#main-menu ul li a').removeClass('active');
-                        },
-                        after: function(i, el){
-                            var current = $.scrollify.current();
-                            current = $(current).data('section-name');
-                            
-                            $('#main-menu ul li a[href=#'+current+']').addClass('active');
-                        },
-                        sectionName : "section-name",
-                        overflowScroll: true,
-                    });
-                });
+    section : ".example-classname",
+    sectionName : "section-name",
+    interstitialSection : "",
+    easing: "easeOutExpo",
+    scrollSpeed: 1100,
+    offset : 0,
+    scrollbars: true,
+    standardScrollElements: "",
+    setHeights: true,
+    overflowScroll: true,
+    updateHash: true,
+    touchScroll:true,
+    before:function() {},
+    after:function() {},
+    afterResize:function() {},
+    afterRender:function() {}
+  });
+});
         </script>
     </body>
 </html>
