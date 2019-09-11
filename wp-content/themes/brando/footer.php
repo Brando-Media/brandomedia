@@ -75,7 +75,7 @@
                     if($('.hidden-work').is(':visible')){
                         $(this).text('Hide More Work');
                     }else{
-                        $.scrollify.disable();
+                        //$.scrollify.disable();
                         $(this).text('Show More Work');
                         setTimeout(function(){
                             $.scrollify.enable();
@@ -88,7 +88,7 @@
 
             $(document).ready(function(e){
                 var type = window.location.hash.substr(1);
-                $.scrollify.disable();
+                //$.scrollify.disable();
                 console.log(type);
 
                 $(".downarrow").click(function(){
