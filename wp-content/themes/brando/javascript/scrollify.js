@@ -809,6 +809,8 @@ if touchScroll is false - update index
     names = [];
     elements = [];
     overflow = [];
+    firstLoad=true;
+    initialised=false;
   };
   scrollify.update = function() {
     if(!initialised) {
