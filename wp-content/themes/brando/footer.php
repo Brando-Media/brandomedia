@@ -7,7 +7,7 @@
         <script src="<?php bloginfo('template_directory'); ?>/javascript/script.js"></script>
         <script src="<?php bloginfo('template_directory'); ?>/javascript/scrollify.js"></script>
 
-        <script> /*
+        <script>
             <?php if(!is_singular('work')): ?>
                 $(window).on('load', function(){
                     $.scrollify({
