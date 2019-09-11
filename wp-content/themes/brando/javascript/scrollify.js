@@ -516,9 +516,9 @@ if touchScroll is false - update index
       },
       init: function() {
         if (document.addEventListener && settings.touchScroll) {
-          /*var eventListenerOptions = {
+          var eventListenerOptions = {
             passive: false
-          };*/
+          };
           document.addEventListener('touchstart', swipeScroll.touchHandler, eventListenerOptions);
           document.addEventListener('touchmove', swipeScroll.touchHandler, eventListenerOptions);
           document.addEventListener('touchend', swipeScroll.touchHandler, eventListenerOptions);

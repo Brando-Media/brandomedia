@@ -194,7 +194,6 @@ $(function() {
         overflowScroll: true,
     });
 });
-$.scrollify.enable();
         </script>
     </body>
 </html>
