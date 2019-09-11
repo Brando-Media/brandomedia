@@ -78,7 +78,7 @@ if touchScroll is false - update index
       sectionName: "section-name",
       interstitialSection: "",
       easing: "easeOutExpo",
-      scrollSpeed: 1100,
+      scrollSpeed: 1800,
       offset: 0,
       scrollbars: true,
       target:"html,body",
@@ -93,7 +93,7 @@ if touchScroll is false - update index
       afterRender:function() {}
     };
   function getportHeight() {
-    return (window.innerHeight + settings.offset);
+    return ($window.height() + settings.offset);
   }
   function animateScroll(index,instant,callbacks,toTop) {
     if(currentIndex===index) {
@@ -304,9 +304,7 @@ if touchScroll is false - update index
         scrollTime = currentScrollTime;
 
 
-        if(locked) {
-          return false;
-        }
+        if(locked) { e.preventDefault(); return false; }
         if(delta<0) {
           if(index<heights.length-1) {
             if(atBottom()) {
@@ -617,7 +615,7 @@ if touchScroll is false - update index
           if($this.is(settings.interstitialSection)) {
             overflow[i] = false;
           } else {
-            if(($this.css("height","auto").outerHeight()<portHeight) || $this.css("overflow")==="hidden") {
+            if(($this.css("height","auto").outerHeight()<=portHeight) || $this.css("overflow")==="hidden") {
               $this.css({"height":portHeight});
 
               overflow[i] = false;
@@ -636,7 +634,7 @@ if touchScroll is false - update index
 
         } else {
 
-          if(($this.outerHeight()<portHeight) || (settings.overflowScroll===false)) {
+          if(($this.outerHeight()<=portHeight) || (settings.overflowScroll===false)) {
             overflow[i] = false;
           } else {
             overflow[i] = true;
@@ -811,8 +809,6 @@ if touchScroll is false - update index
     names = [];
     elements = [];
     overflow = [];
-    firstLoad=true;
-    initialised=false;
   };
   scrollify.update = function() {
     if(!initialised) {
