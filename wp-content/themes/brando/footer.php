@@ -126,24 +126,7 @@
             }
             };
 
-    $(document).ready(function(e){
-        var type = window.location.hash.substr(1);
-        $.scrollify.disable();
-        console.log(type);
-        $.scrollify(option);
-
-        $(".downarrow").click(function(){
-            $.scrollify.next();
-        });
-
-      $(".uparrow").click(function(){
-        $.scrollify.move();
-      });
-        setTimeout(function(){
-            $.scrollify.enable();
-            $.scrollify.move("#" + type);
-        }, 200);
-    });
+    
 
     function pagerCurrent(index = 0) {
       var $li = $pager.find('li');
@@ -211,6 +194,7 @@ $(function() {
         overflowScroll: true,
     });
 });
+$.scrollify.enable();
         </script>
     </body>
 </html>
