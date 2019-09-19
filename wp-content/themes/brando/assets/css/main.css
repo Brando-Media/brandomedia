@@ -404,6 +404,7 @@ input.form-control {
 .work-item .work-item-block img {
   width: 100%;
   margin-bottom: 11px;
+  border: solid 2px;
 }
 .work-item .work-item-block h5 {
   font-size: 12px;
