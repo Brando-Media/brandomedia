@@ -11,7 +11,7 @@
         <script>
             var test = '<?php echo bloginfo('template_directory'); ?>';
             console.log(test);
-            /*
+            
             
             
             <?php if(!is_singular('work')): ?>
@@ -51,7 +51,7 @@
                         overflowScroll: true,
                     });
                 });
-            <?php endif; ?>
+            <?php endif; ?> 
 
             $(function() {
                 <?php if(!is_singular('work')): ?>
