@@ -14,8 +14,8 @@ $sectionName = str_replace(' ', '', strtolower($title));
                     $class = '';
                     if($k%2==1) $class = 'ml-auto';
                     ?>
-                    <div class="col-lg-5 list-service <?php echo $class; ?>">
-                        <h3 style="color:white;"><?php echo $service['title']; ?></h3>
+                    <div class="col-lg-5 list-service servicefont <?php echo $class; ?>">
+                        <h3 style=""><?php echo $service['title']; ?></h3>
                         <p style="font-size:16px;"><?php echo $service['content']; ?></p>
                     </div>
                 <?php endforeach; ?>

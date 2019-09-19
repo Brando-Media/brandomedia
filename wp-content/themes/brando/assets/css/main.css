@@ -335,6 +335,7 @@ p, .main-content ul {
 }
 .list-service p {
   font-size: 13px;
+  line-height: 30px;
 }
 
 .form-control {
@@ -622,10 +623,29 @@ textarea::placeholder {
   color: #EF680C;
 }
 
+.fw100 {
+  font-weight: 100;
+}
+
 @media only screen and (max-width: 600px) {
   .line {
     display: none;
   }
+}
+.fw100 h1 span {
+  font-weight: 100;
+}
+.fw100 p {
+  font-weight: 100;
+}
+
+.servicefont h3 {
+  color: #EF680C;
+  font-weight: 100;
+}
+.servicefont h3 strong {
+  color: white;
+  font-weight: 100;
 }
 
 /*# sourceMappingURL=main.css.map */
