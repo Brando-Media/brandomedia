@@ -10,7 +10,7 @@ $fontsize: 13px;
 $contentpadding: 70px;
 
 body {
-    font-family: 'Poppins', sans-serif;;
+    font-family: Poppins;;
     font-weight: normal;
     font-style: normal;
 }
@@ -195,7 +195,7 @@ p, .main-content ul{
         }
     }
     #main-menu ul > li a{
-        font-family: 'Poppins', sans-serif;;
+        font-family: Poppins;
         font-weight: 900;
         font-style: normal;
         font-size: 12px; 
@@ -252,7 +252,7 @@ p, .main-content ul{
     a{
         color: #fff;
         text-transform: uppercase;
-        font-family: 'Poppins', sans-serif;;
+        font-family: Poppins;;
         font-style: normal;
         font-weight: 900;
         font-size: 12px;
@@ -274,7 +274,7 @@ p, .main-content ul{
         text-transform: uppercase;
         font-size: 12px;
         font-weight: 900;
-        font-family: 'Poppins', sans-serif;;
+        font-family: Poppins;;
         font-style: normal;
         letter-spacing: 3px;
         transition: all 0.5s;
@@ -292,13 +292,13 @@ p, .main-content ul{
 .main-title{
     font-size: 50px;
     margin-bottom: 30px;
-    font-weight: 900;
-    font-family: 'Poppins', sans-serif;;
+    font-weight: 100;
+    font-family: Poppins;
     font-style: normal;
     letter-spacing: -0.5px;
 }
 .title{
-    font-family: 'Poppins', sans-serif;;
+    font-family: Poppins;;
     font-size: 35px;
     font-weight: 200;
     margin-bottom: 30px;
@@ -321,7 +321,7 @@ p, .main-content ul{
     }
     h3{
         font-size: 35px;
-        font-family: 'Poppins', sans-serif;;
+        font-family: Poppins;;
         font-weight: 200;
         font-style: normal;
         letter-spacing: -0.35px;
@@ -344,7 +344,7 @@ textarea.form-control{
     height: 108px;
     resize: none;
     font-size: 12px;
-    font-family: 'Poppins', sans-serif;;
+    font-family: Poppins;;
     font-weight: normal;
     font-style: normal;
     padding: 10px;
@@ -354,7 +354,7 @@ textarea.form-control{
 input.form-control{
     height: 35px;
     font-size: 12px;
-    font-family: 'Poppins', sans-serif;;
+    font-family: Poppins;;
     font-weight: normal;
     font-style: normal;
     padding: 10px;
@@ -386,7 +386,7 @@ input.form-control{
             }
             .wpcf7-submit {
                 font-size: 12px;
-                font-family: 'Poppins', sans-serif;
+                font-family: Poppins;
                 font-weight: normal;
                 font-style: normal;
                 border: 1px solid;
@@ -444,14 +444,14 @@ input.form-control{
 
         h5 {
             font-size: 12px;
-            font-family: 'Poppins', sans-serif;;
+            font-family: Poppins;;
             font-weight: 900;
             font-style: normal;
             margin: 0;
             text-transform: uppercase;
 
             span {
-                font-family: 'Poppins', sans-serif;;
+                font-family: Poppins;;
                 font-weight: normal;
                 font-style: normal;
                 text-transform: none;
@@ -467,7 +467,7 @@ input.form-control{
         border: 2px solid black;
         color: black;
         font-size: 12px;
-        font-family: 'Poppins', sans-serif;;
+        font-family: Poppins;;
         font-weight: 900;
         font-style: normal;
         padding: 12px 12px;
@@ -503,7 +503,7 @@ input.form-control{
 
 .services-content{
     font-size: 42px;
-    font-family: 'Poppins', sans-serif;;
+    font-family: Poppins;                            ;
 }
 
 .services-leftbox { 
