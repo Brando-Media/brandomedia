@@ -431,7 +431,7 @@ input.form-control {
   font-family: "PangramBlack";
   font-weight: 900;
   font-style: normal;
-  padding: 12px 0;
+  padding: 12px 12px;
   max-width: 156px;
   text-align: center;
   text-transform: uppercase;
