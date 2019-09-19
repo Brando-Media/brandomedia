@@ -1,14 +1,19 @@
-            <div id="brando-container" class="container"><span id="brando">Brando Media</span></div>
-            <footer id="footer" class="container">
+            <!--<div id="brando-container" class="container"><span id="brando">Brando Media</span></div>-->
+            <!--<footer id="footer" class="container">
                 <a href="#" class="float-right">Instagram</a>
-            </footer>
+            </footer>-->
         </div><?php //#wrapper ?>
         <?php wp_footer(); ?>
         <script src="<?php bloginfo('template_directory'); ?>/javascript/script.js"></script>
         <script src="<?php bloginfo('template_directory'); ?>/javascript/scrollify.js"></script>
+        
 
         <script>
+            var test = '<?php echo bloginfo('template_directory'); ?>';
+            console.log(test);
             /*
+            
+            
             <?php if(!is_singular('work')): ?>
                 $(window).on('load', function(){
                     $.scrollify({
@@ -158,6 +163,26 @@
 
     
 }(jQuery));*/
+    $(window).on('load', function(){    
+        menuMobile();
+    });
+
+    $(window).on('resize', function(){
+        menuMobile();
+    })
+
+
+    function menuMobile(){
+        if($(window).width() <= 991){
+            $(".white-logo").attr("src",test+"/assets/images/swiftsmallblack.png");
+            $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
+            console.log("gelo");
+        }else{
+            $(".white-logo").attr("src",test+"/assets/images/swiftfulllogo.png");
+            $(".red-logo").attr("src",test+"/assets/images/swiftfulllogo.png");
+        }
+    }
+
 $(function() {
     $.scrollify({
         section : ".section",
@@ -166,18 +191,38 @@ $(function() {
             var wrapperClass = '';
             if(nextEl.hasClass('red-bg')){
                 wrapperClass = 'red-default';
+                $(".white-logo").attr("src",test+"/assets/images/swiftsmallblack.png");
+                $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
             }
             else if(nextEl.hasClass('pink-bg')){
                 wrapperClass = 'pink-default';
+                $(".white-logo").attr("src",test+"/assets/images/swiftsmallblack.png");
+                $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
             }
             else if(nextEl.hasClass('blue-bg')){
                 wrapperClass = 'blue-default';
+                $(".white-logo").attr("src",test+"/assets/images/swiftsmallblack.png");
+                $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
+            }
+            else if(nextEl.hasClass('orange-bg')){
+                wrapperClass = 'orange-default';
+                $(".white-logo").attr("src",test+"/assets/images/swiftsmallblack.png");
+                $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
             }
             else if(nextEl.hasClass('green-bg')){
                 wrapperClass = 'green-default';
+                $(".white-logo").attr("src",test+"/assets/images/swiftsmallblack.png");
+                $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
             }
             else if(nextEl.hasClass('white-bg')){
                 wrapperClass = 'white-default';
+                $(".white-logo").attr("src",test+"/assets/images/swiftsmallblack.png");
+                $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
+            }
+            else if(nextEl.hasClass('homeblue-bg')){
+                wrapperClass = 'homeblue-default';
+                $(".white-logo").attr("src",test+"/assets/images/swiftfulllogo.png");
+                $(".red-logo").attr("src",test+"/assets/images/swiftfulllogo.png");
             }
 
             $('#wrapper').removeAttr('class');

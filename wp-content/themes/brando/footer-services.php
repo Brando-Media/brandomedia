@@ -1,7 +1,7 @@
-<div id="brando-container" class="container"><span id="brando">Brando Media</span></div>
-            <footer id="footer" class="container">
+<!--<div id="brando-container" class="container"><span id="brando">Brando Media</span></div>-->
+           <!-- <footer id="footer" class="container">
                 <a href="#" class="float-right">Instagram</a>
-            </footer>
+            </footer> -->
         </div><?php //#wrapper ?>
         <?php wp_footer(); ?>
         <script src="<?php bloginfo('template_directory'); ?>/javascript/script.js"></script>
@@ -9,7 +9,7 @@
 
         <script>
             <?php if(!is_singular('work')): ?>
-                $(window).on('load', function(){
+                $(window).on('load', function(){ 
                     $.scrollify({
                         section : ".section",
                         before: function(i, el){
@@ -26,6 +26,9 @@
                             }
                             else if(nextEl.hasClass('green-bg')){
                                 wrapperClass = 'green-default';
+                            }
+                            else if(nextEl.hasClass('orange-bg')){
+                                wrapperClass = 'orange-default';
                             }
                             else if(nextEl.hasClass('white-bg')){
                                 wrapperClass = 'white-default';
