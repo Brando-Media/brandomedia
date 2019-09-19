@@ -7,7 +7,7 @@ $sectionName = str_replace(' ', '', strtolower($title));
     <div class="container container--small align-self-center">
         <h2 class="main-title"><?php echo $title; ?></h2>
         <div class="row">
-            <div class="col-lg-5">
+            <div class="col-lg-5" style="max-width:500px;">
                 <?php echo get_sub_field('content'); ?>
             </div>
         </div>
