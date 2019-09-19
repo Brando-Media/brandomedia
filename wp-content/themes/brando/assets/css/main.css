@@ -618,4 +618,14 @@ textarea::placeholder {
   color: black !important;
 }
 
+.orangefont {
+  color: #EF680C;
+}
+
+@media only screen and (max-width: 600px) {
+  .line {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
