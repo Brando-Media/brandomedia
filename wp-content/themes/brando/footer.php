@@ -36,6 +36,12 @@
                             else if(nextEl.hasClass('white-bg')){
                                 wrapperClass = 'white-default';
                             }
+                            else if(nextEl.hasClass('orange-bg')){
+                                wrapperClass = 'orange-default';
+                            }
+                            else if(nextEl.hasClass('homeblue-bg')){
+                                wrapperClass = 'homeblue-default';
+                            }
 
                             $('#wrapper').removeAttr('class');
                             $('#wrapper').addClass(wrapperClass);
