@@ -261,7 +261,9 @@ $(function() {
     });
 }); */
 
-$.scrollify({
+
+//v is potential mobile fix
+/*$.scrollify({
     section : "section",
     sectionName : "section-name",
     interstitialSection : "",
@@ -277,7 +279,7 @@ $.scrollify({
     after:function() {},
     afterResize:function() {},
     afterRender:function() {}
-  });
+  });*/
         </script>
     </body>
 </html>

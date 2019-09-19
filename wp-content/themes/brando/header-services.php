@@ -37,8 +37,8 @@
             <header id="header">
                 <div class="container clearfix">
                     <a href="http://brando.media/brando#home" id="logo" class="float-left">
-                        <img class="white-logo" src="<?php bloginfo('template_url') ?>/assets/images/logo-white.png" alt="Brando Media" title="Brando Media" />
-                        <img class="red-logo" src="<?php bloginfo('template_url') ?>/assets/images/logo-red.png" alt="Brando Media" title="Brando Media" />
+                        <img class="white-logo" src="<?php bloginfo('template_url') ?>/assets/images/swiftsmallblack.png" alt="Brando Media" title="Brando Media" />
+                        <img class="red-logo" src="<?php bloginfo('template_url') ?>/assets/images/swiftsmallorange.png" alt="Brando Media" title="Brando Media" />
                     </a>
                     <?php if(have_rows('content', 2)): ?>
                         <nav id="main-menu" class="float-right"> 
