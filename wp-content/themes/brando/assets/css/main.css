@@ -19,6 +19,12 @@
   font-weight: 200;
   font-style: normal;
 }
+@font-face {
+  font-family: "GenomeThin";
+  src: url("../fonts/GenomeThin.otf");
+  font-weight: 100;
+  font-style: normal;
+}
 body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
