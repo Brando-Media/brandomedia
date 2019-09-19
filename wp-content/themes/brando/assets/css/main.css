@@ -425,8 +425,8 @@ input.form-control {
   margin-top: 40px;
 }
 .show-btn-block .btn-block {
-  border: 4px solid #d81516;
-  color: #d81516;
+  border: 4px solid black;
+  color: black;
   font-size: 12px;
   font-family: "PangramBlack";
   font-weight: 900;
