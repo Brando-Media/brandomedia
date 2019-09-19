@@ -196,7 +196,7 @@ p, .main-content ul {
   position: relative;
 }
 #logo img {
-  max-width: 250px;
+  min-height: 58px;
   transition: all 1.5s;
   opacity: 0;
 }

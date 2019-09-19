@@ -34,6 +34,7 @@
             $class = 'red-default';
         }
         ?>
+        
         <div id="wrapper" class="<?php echo $class; ?>">
             <header id="header">
                 <div class="container clearfix">

@@ -203,6 +203,7 @@
         }
     }
 
+    /*
 $(function() {
     $.scrollify({
         section : ".section",
@@ -258,7 +259,7 @@ $(function() {
         sectionName : "section-name",
         overflowScroll: true,
     });
-});
+}); */
 
 $.scrollify({
     section : "section",
