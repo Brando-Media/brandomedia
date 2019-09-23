@@ -53,8 +53,14 @@
                             }
                             else if(nextEl.hasClass('homeblue-bg')){
                                 wrapperClass = 'homeblue-default';
-                                $(".white-logo").attr("src",test+"/assets/images/swiftfulllogo.png");
-                                $(".red-logo").attr("src",test+"/assets/images/swiftfulllogo.png");
+                                if($(window).width() <= 991){
+                                    $(".white-logo").attr("src",test+"/assets/images/swiftsmallblack.png");
+                                    $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
+                                    console.log("gelo");
+                                }else{
+                                    $(".white-logo").attr("src",test+"/assets/images/swiftfulllogo.png");
+                                    $(".red-logo").attr("src",test+"/assets/images/swiftfulllogo.png");
+                                }  
                             }
 
                             $('#wrapper').removeAttr('class');
@@ -185,23 +191,67 @@
 }(jQuery));*/
     $(window).on('load', function(){    
         menuMobile();
+        homeScroll();
+
     });
 
     $(window).on('resize', function(){
         menuMobile();
+        homeScroll();
+
     })
 
 
     function menuMobile(){
+        if($(window).width() <= 1200){
+            $(".header__list").css("display", "none");
+        
+        }else{
+            $(".header__list").css("display", "flex"); 
+        }
         if($(window).width() <= 991){
             $(".white-logo").attr("src",test+"/assets/images/swiftsmallblack.png");
             $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
             console.log("gelo");
         }else{
-            $(".white-logo").attr("src",test+"/assets/images/swiftfulllogo.png");
-            $(".red-logo").attr("src",test+"/assets/images/swiftfulllogo.png");
+            if(nextEl.hasClass('homeblue-bg')){
+                $(".white-logo").attr("src",test+"/assets/images/swiftfulllogo.png");
+                $(".red-logo").attr("src",test+"/assets/images/swiftfulllogo.png");
+            }else{
+                $(".white-logo").attr("src",test+"/assets/images/swiftsmallblack.png");
+                $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
+            }
         }
     }
+
+    $('.header__list .header__list-item a').on('click', function (e) {
+        var target = $(this).attr('href');
+        target = target.replace('#', '');
+        target = $("[data-section-name='" + target + "']");
+        var t = $(target).offset().top;
+        $('body,html').animate({ 'scrollTop': t }, 1000)
+        $(".header__list").css("display", "none");
+        return false;
+    });
+    $(".open-mob-menu-btn").on("click", function() {
+		$(".header__list").fadeToggle("slow");
+	});
+	$(".logo-header").click(function() {
+	  $("html, body").animate({ scrollTop: 0 }, 700);
+	  return false;
+	});
+
+/*function homeScroll(){
+	if($(window).width() <= 1024 || $(window).height() <= 670){
+		$.scrollify.disable();
+		$('.section-template').removeAttr('style');
+		
+	}else{
+		if($.scrollify.isDisabled()){
+			$.scrollify.enable();
+		}
+	}
+}*/
 
     /*
 $(function() {

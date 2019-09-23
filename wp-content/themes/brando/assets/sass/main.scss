@@ -1,4 +1,9 @@
 @import "fonts";
+@import "variables";
+@import "mixins";
+@import "normalize";
+@import "reset";
+@import "header";
 
 $red: #d81516;
 $pink: #f08482;
@@ -10,7 +15,7 @@ $fontsize: 13px;
 $contentpadding: 70px;
 
 body {
-    font-family: Poppins;;
+    font-family: Poppins;
     font-weight: normal;
     font-style: normal;
 }
@@ -18,7 +23,7 @@ body {
 p, .main-content ul{
     font-size: $fontsize;
     letter-spacing: -0.32px;
-}
+} 
 
 .container{
     width: 95%;
@@ -28,17 +33,17 @@ p, .main-content ul{
     }
 }
 
-.red-bg{
+.red-bg{ 
     background: $red;
 }
 .orange-bg{
     background: $orange;
     *{ 
-        color:black;
+        color:black; 
     }
 }
 
-.pink-bg{
+.pink-bg{ 
     background: $pink;
     *{
         color: #fff;
@@ -217,11 +222,13 @@ p, .main-content ul{
         min-height:58px;
         transition: all 1.5s;
         opacity:0;
+        max-width: 500px;
         &.red-logo{
             position: absolute;
             left: 0;
             top: 0;
             opacity: 1;
+            max-width: 500px;
         }
     }
 }
@@ -659,3 +666,4 @@ textarea::-webkit-input-placeholder {
          }
      }
  }
+ 

@@ -19,9 +19,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <?php require_once('BFI_Thumb.php'); ?>
         <?php wp_head(); ?>
+        
  
         <!--[if lt IE 9]> <script src="<?php bloginfo('template_directory'); ?>/javascript/html5shiv.js"></script> <![endif]-->
-        
+         
     </head>
     <body <?php body_class(); ?>>
         <?php
@@ -35,8 +36,8 @@
         }
         ?>
         
-        <div id="wrapper" class="<?php echo $class; ?>">
-            <header id="header">
+         <!--<div id="wrapper" class="<?php echo $class; ?>">
+           <header id="header">
                 <div class="container clearfix">
                     <a href="#home" id="logo" class="float-left">
                         <img class="white-logo" src="<?php bloginfo('template_url') ?>/assets/images/swiftsmallblack.png" alt="Brando Media" title="Brando Media" />
@@ -57,5 +58,47 @@
                             </ul>
                         </nav>
                     <?php endif; ?>
-                </div>
-            </header>
+                </header>-->
+
+                <div id="wrapper" class="<?php echo $class; ?>">
+                <header class="header">
+                    
+	<div class="header__container mob-menu">
+		<div class="link-list-block" id="main-menu">
+    
+			<input type="checkbox" class="toggle-mob-menu-checkbox" id="mob_toggle">
+          <label for="mob_toggle" class="open-mob-menu-btn" href="#"><span class="open-mob-menu-btn__icon">&nbsp;</span></label>
+          <!-- <label for="mob_toggle" class="close-mob-menu-btn" href="#"><span class="close-mob-menu-btn__icon">&nbsp;</span></label> -->
+
+          <ul class="header__list">
+          <?php
+            if (isset($page) && $page == 'home') { ?>
+                  <?php while(have_rows('content', 2)): the_row(); ?>
+                                    <?php 
+                                    $title       = get_sub_field('title');
+                                    $sectionName = str_replace(' ', '', strtolower($title));
+                                    $url = '#'.$sectionName;
+                                    if(!is_page_template('front-page.php')) $url = get_bloginfo('url').$url;
+                                    ?>
+                                    <li class="header__list-item"><a class="hover-underline-link about-link" href="<?php echo $url; ?>"><?php echo $title ?></a></li>
+                                <?php endwhile; ?>
+            <?php } else { ?>
+                <?php while(have_rows('content', 2)): the_row(); ?>
+                                    <?php 
+                                    $title       = get_sub_field('title');
+                                    $sectionName = str_replace(' ', '', strtolower($title));
+                                    $url = '#'.$sectionName;
+                                    if(!is_page_template('front-page.php')) $url = get_bloginfo('url').$url;
+                                    ?>
+                                    <li class="header__list-item"><a class="hover-underline-link about-link" href="<?php echo $url; ?>"><?php echo $title ?></a></li>
+                                <?php endwhile; ?>
+            <?php } ?>
+        </ul>
+		</div>
+		
+	</div>
+</header>
+</div
+            
+
+  
