@@ -10,6 +10,7 @@
     );
     $works = get_posts($works);
     $workpos = 0;
+    $firstover3 = 0;
 ?>
 
 <section id="featuredworks" class="section <?php echo $bg; ?>-bg d-flex" data-section-name="<?php echo $sectionName; ?>">
@@ -25,6 +26,29 @@
                         if($k>3) $class = 'd-none hidden-work';
                         $workpos++;
                     ?>
+
+                    <?php if($k > 3){
+                        if($firstover3 == 0){ ?>
+                            <div class="container">
+                    <?php    } 
+
+
+                        $firstover3++; ?>
+                                    <div class="row">
+
+                        <div class="col-lg-6 work-item <?php echo $class; ?>">
+                        <div class="work-item-block">
+                            <a id="<?php echo $workpos ?>" href="<?php echo get_permalink($work->ID); ?>">
+                                <?php if($image): ?>
+                                    <img class="img-fluid w-100" src="<?php echo $image['url'] ?>" />
+                                <?php endif; ?>
+                                <h5><?php echo $work->post_title ?> / <span><?php echo implode(', ', $done) ?></span></h5>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <?php   }else{ ?>
                     <div class="col-lg-6 work-item <?php echo $class; ?>">
                         <div class="work-item-block">
                             <a id="<?php echo $workpos ?>" href="<?php echo get_permalink($work->ID); ?>">
@@ -35,7 +59,13 @@
                             </a>
                         </div>
                     </div>
+
+                    <?php } ?>
+                    
                 <?php endforeach; ?>
+                </div>
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+
                 <div style="height:40px; z-index:100;">
                 <section id="buttonsection" class="section white-bg" data-section-name="show-more-work"  style="z-index:1; height:40px; !important;">
                 <div class="col-lg-12 show-btn-block" style="height:40px; margin-top:0px;">

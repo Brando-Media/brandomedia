@@ -36,13 +36,10 @@
         }
         ?>
         
-         <!--<div id="wrapper" class="<?php echo $class; ?>">
+         <!--div id="wrapper" class="<?php echo $class; ?>">
            <header id="header">
                 <div class="container clearfix">
-                    <a href="#home" id="logo" class="float-left">
-                        <img class="white-logo" src="<?php bloginfo('template_url') ?>/assets/images/swiftsmallblack.png" alt="Brando Media" title="Brando Media" />
-                        <img class="red-logo" src="<?php bloginfo('template_url') ?>/assets/images/swiftfulllogo.png" alt="Brando Media" title="Brando Media" />
-                    </a>
+                    
                     <?php if(have_rows('content', 2)): ?>
                         <nav id="main-menu" class="float-right">
                             <ul>
@@ -60,45 +57,61 @@
                     <?php endif; ?>
                 </header>-->
 
-                <div id="wrapper" class="<?php echo $class; ?>">
-                <header class="header">
-                    
-	<div class="header__container mob-menu">
-		<div class="link-list-block" id="main-menu">
-    
+               <div id="wrapper" class="<?php echo $class; ?>">
+               
+               <div class="fadeclass"> </div>
+               
+                <header id="header" class="header">
+    <div style="position:relative;" class="header__container mob-menu">
+            <div class="brand-icon-block">
+                <a href="#home" id="logo" class="float-left">
+                    <img style="display:none; position:inherit;" class="mobile-logo" src="<?php bloginfo('template_url') ?>/assets/images/swiftsmalllogo.png" alt="Brando Media" title="Brando Media" />
+                    <img id="whitelogo" class="white-logo" src="<?php bloginfo('template_url') ?>/assets/images/swiftsmallblack.png" alt="Brando Media" title="Brando Media" />
+                    <img class="red-logo" src="<?php bloginfo('template_url') ?>/assets/images/swiftfulllogo.png" alt="Brando Media" title="Brando Media" />
+                </a>
+            </div>
+		<div class="link-list-block abs1200" id="main-menu">
+            
 			<input type="checkbox" class="toggle-mob-menu-checkbox" id="mob_toggle">
-          <label for="mob_toggle" class="open-mob-menu-btn" href="#"><span class="open-mob-menu-btn__icon">&nbsp;</span></label>
-          <!-- <label for="mob_toggle" class="close-mob-menu-btn" href="#"><span class="close-mob-menu-btn__icon">&nbsp;</span></label> -->
-
-          <ul class="header__list">
+          <label for="mob_toggle" class="open-mob-menu-btn" href="#"><span id="mobmenuwhite" class="open-mob-menu-btn__icon">&nbsp;</span></label>
+          <ul class="header__list"> 
           <?php
             if (isset($page) && $page == 'home') { ?>
-                  <?php while(have_rows('content', 2)): the_row(); ?>
+                 <!-- <?php while(have_rows('content', 2)): the_row(); ?>
                                     <?php 
                                     $title       = get_sub_field('title');
                                     $sectionName = str_replace(' ', '', strtolower($title));
                                     $url = '#'.$sectionName;
                                     if(!is_page_template('front-page.php')) $url = get_bloginfo('url').$url;
                                     ?>
-                                    <li class="header__list-item"><a class="hover-underline-link about-link" href="<?php echo $url; ?>"><?php echo $title ?></a></li>
-                                <?php endwhile; ?>
+                                    <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link" href="<?php echo $url; ?>"><?php echo $title ?></a></li>
+                                <?php endwhile; ?>-->
+                                <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link" href="#About">ABOUT</a></li>
+                                <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link" href="#ourfeaturedwork">OUR WORK</a></li>
+                                <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link" href="#services">SERVICES</a></li>
+                                <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link" href="#contact">CONTACT</a></li>
             <?php } else { ?>
-                <?php while(have_rows('content', 2)): the_row(); ?>
+              <!--  <?php while(have_rows('content', 2)): the_row(); ?>
                                     <?php 
                                     $title       = get_sub_field('title');
                                     $sectionName = str_replace(' ', '', strtolower($title));
                                     $url = '#'.$sectionName;
                                     if(!is_page_template('front-page.php')) $url = get_bloginfo('url').$url;
                                     ?>
-                                    <li class="header__list-item"><a class="hover-underline-link about-link" href="<?php echo $url; ?>"><?php echo $title ?></a></li>
-                                <?php endwhile; ?>
+                                    <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link" href="<?php echo $url; ?>"><?php echo $title ?></a></li>
+                                <?php endwhile; ?>-->
+                                <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link" href="#about">ABOUT</a></li>
+                                <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link" href="#ourfeaturedwork">OUR WORK</a></li>
+                                <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link" href="#services">SERVICES</a></li>
+                                <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link" href="#contact">CONTACT</a></li>
             <?php } ?>
         </ul>
 		</div>
 		
-	</div>
+    </div>
+   
 </header>
-</div
+            </div>
             
 
   
