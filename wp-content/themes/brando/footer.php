@@ -130,7 +130,8 @@
                 });
 
                 $('.show-more-work').on('click', function(){
-                    $('.hidden-work').toggleClass('d-none');
+                   // $('.hidden-work').toggleClass('d-none');
+                    $(".hidden-work").fadeToggle("slow");
                     $.scrollify.update();
                     if($('.hidden-work').is(':visible')){
                         $(this).text('Hide More Work');

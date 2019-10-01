@@ -1399,4 +1399,12 @@ textarea::placeholder {
   height: auto !important;
 }
 
+.d-none {
+  transition: all 1.5s;
+}
+
+.hidden-work {
+  display: none;
+}
+
 /*# sourceMappingURL=main.css.map */

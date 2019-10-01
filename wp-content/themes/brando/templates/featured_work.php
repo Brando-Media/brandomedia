@@ -23,7 +23,7 @@
                         $image = get_field('featured_image', $work->ID);
                         $done = get_field('what_we_done', $work->ID);
                         $class = '';
-                        if($k>3) $class = 'd-none hidden-work';
+                        if($k>3) $class = 'hidden-work';
                         $workpos++;
                     ?>
 
