@@ -13,6 +13,7 @@ $orange: #EF680C;
 $white: #ffffff;
 $fontsize: 13px; 
 $contentpadding: 70px;
+$contactcolour: white;
 
 body {
     font-family: Poppins;
@@ -398,7 +399,7 @@ textarea.form-control{
     font-weight: normal;
     font-style: normal;
     padding: 10px;
-    border-color:black;
+    border-color:$contactcolour;
 }
 
 input.form-control{
@@ -408,7 +409,7 @@ input.form-control{
     font-weight: normal;
     font-style: normal;
     padding: 10px;
-    border-color:black;
+    border-color:$contactcolour;
 }
 
 .contact-form{
@@ -596,72 +597,72 @@ input.form-control{
 }
 
 ::-webkit-input-placeholder { /* Edge */
-    color: black;
+    color: $contactcolour;
   }
   
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: black;
+    color: $contactcolour;
   }
   
   ::placeholder {
-    color: black;
+    color: $contactcolour;
   }
 
   input[type="email"]::placeholder { /* Firefox, Chrome, Opera */ 
-    color: black; 
+    color: $contactcolour; 
 } 
   
 input[type="email"]:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
-    color: black; 
+    color: $contactcolour; 
 } 
   
 input[type="email"]::-ms-input-placeholder { /* Microsoft Edge */ 
-    color: black; 
+    color: $contactcolour; 
 } 
 
 input[type="text"]::placeholder { /* Firefox, Chrome, Opera */ 
-    color: black; 
+    color: $contactcolour; 
 } 
   
 input[type="text"]:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
-    color: black; 
+    color: $contactcolour; 
 } 
   
 input[type="text"]::-ms-input-placeholder { /* Microsoft Edge */ 
-    color: black; 
+    color: $contactcolour; 
 } 
 input[type="textarea"]::placeholder { /* Firefox, Chrome, Opera */ 
-    color: black; 
+    color: $contactcolour; 
 } 
   
 input[type="textarea"]:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
-    color: black; 
+    color: $contactcolour; 
 } 
   
 input[type="textarea"]::-ms-input-placeholder { /* Microsoft Edge */ 
-    color: black; 
+    color: $contactcolour; 
 } 
 
 textarea::-webkit-input-placeholder {
-    color: black;
+    color: $contactcolour;
   }
   
   textarea:-moz-placeholder { /* Firefox 18- */
-    color: black;  
+    color: $contactcolour;  
   }
   
   textarea::-moz-placeholder {  /* Firefox 19+ */
-    color: black;  
+    color: $contactcolour;  
   }
   
   textarea:-ms-input-placeholder {
-    color: black;  
+    color: $contactcolour;  
   }
   
   textarea::placeholder {
-    color: black;  
+    color: $contactcolour;  
   }
-  textarea::placeholder {color: black!important;}
+  textarea::placeholder {color: $contactcolour!important;}
 
   .orangefont{
       color:#EF680C;

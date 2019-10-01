@@ -1092,7 +1092,7 @@ textarea.form-control {
   font-weight: normal;
   font-style: normal;
   padding: 10px;
-  border-color: black;
+  border-color: white;
 }
 
 input.form-control {
@@ -1102,7 +1102,7 @@ input.form-control {
   font-weight: normal;
   font-style: normal;
   padding: 10px;
-  border-color: black;
+  border-color: white;
 }
 
 .contact-form div.wpcf7-response-output {
@@ -1273,87 +1273,87 @@ input.form-control {
 
 ::-webkit-input-placeholder {
   /* Edge */
-  color: black;
+  color: white;
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: black;
+  color: white;
 }
 
 ::placeholder {
-  color: black;
+  color: white;
 }
 
 input[type=email]::placeholder {
   /* Firefox, Chrome, Opera */
-  color: black;
+  color: white;
 }
 
 input[type=email]:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: black;
+  color: white;
 }
 
 input[type=email]::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: black;
+  color: white;
 }
 
 input[type=text]::placeholder {
   /* Firefox, Chrome, Opera */
-  color: black;
+  color: white;
 }
 
 input[type=text]:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: black;
+  color: white;
 }
 
 input[type=text]::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: black;
+  color: white;
 }
 
 input[type=textarea]::placeholder {
   /* Firefox, Chrome, Opera */
-  color: black;
+  color: white;
 }
 
 input[type=textarea]:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: black;
+  color: white;
 }
 
 input[type=textarea]::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: black;
+  color: white;
 }
 
 textarea::-webkit-input-placeholder {
-  color: black;
+  color: white;
 }
 
 textarea:-moz-placeholder {
   /* Firefox 18- */
-  color: black;
+  color: white;
 }
 
 textarea::-moz-placeholder {
   /* Firefox 19+ */
-  color: black;
+  color: white;
 }
 
 textarea:-ms-input-placeholder {
-  color: black;
+  color: white;
 }
 
 textarea::placeholder {
-  color: black;
+  color: white;
 }
 
 textarea::placeholder {
-  color: black !important;
+  color: white !important;
 }
 
 .orangefont {
