@@ -131,13 +131,17 @@
 
                 $('.show-more-work').on('click', function(){
                     $('.hidden-work').toggleClass('d-none');
+                    $.scrollify.update();
                     if($('.hidden-work').is(':visible')){
                         $(this).text('Hide More Work');
+                        $.scrollify.update();
                     }else{
+                        $.scrollify.update();
                         $.scrollify.disable();
                         $(this).text('Show More Work');
                         setTimeout(function(){
                             $.scrollify.enable();
+                            $.scrollify.update();
                         }, 500);
                     }
                     $.scrollify.update();

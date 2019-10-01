@@ -1395,5 +1395,8 @@ textarea::placeholder {
     right: 0;
   }
 }
+.sectionshow {
+  height: auto !important;
+}
 
 /*# sourceMappingURL=main.css.map */

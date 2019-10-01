@@ -13,7 +13,7 @@
     $firstover3 = 0;
 ?>
 
-<section id="featuredworks" class="section <?php echo $bg; ?>-bg d-flex" data-section-name="<?php echo $sectionName; ?>">
+<section id="featuredworks" class="section <?php echo $bg; ?>-bg d-flex sectionshow" data-section-name="<?php echo $sectionName; ?>">
     <div class="container container--small the-featured-work">
         <h2 class="main-title"><?php echo $title; ?></h2>
         <?php if($works): ?>
