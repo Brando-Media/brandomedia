@@ -27,28 +27,6 @@
                         $workpos++;
                     ?>
 
-                    <?php if($k > 3){
-                        if($firstover3 == 0){ ?>
-                            <div class="container">
-                    <?php    } 
-
-
-                        $firstover3++; ?>
-                                    <div class="row">
-
-                        <div class="col-lg-6 work-item <?php echo $class; ?>">
-                        <div class="work-item-block">
-                            <a id="<?php echo $workpos ?>" href="<?php echo get_permalink($work->ID); ?>">
-                                <?php if($image): ?>
-                                    <img class="img-fluid w-100" src="<?php echo $image['url'] ?>" />
-                                <?php endif; ?>
-                                <h5><?php echo $work->post_title ?> / <span><?php echo implode(', ', $done) ?></span></h5>
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <?php   }else{ ?>
                     <div class="col-lg-6 work-item <?php echo $class; ?>">
                         <div class="work-item-block">
                             <a id="<?php echo $workpos ?>" href="<?php echo get_permalink($work->ID); ?>">
@@ -60,7 +38,6 @@
                         </div>
                     </div>
 
-                    <?php } ?>
                     
                 <?php endforeach; ?>
                 </div>
