@@ -300,6 +300,7 @@ $(function(){
         $(".mobile-logo").toggle();
         $(".white-logo").toggle();
         $(".red-logo").toggle();
+        $(".showmoreworkbuttondiv").fadeToggle("slow");
         if (document.getElementById('whitelogo').getAttribute('src') != test+"/assets/images/swiftsmalllogo.png"){
             $(".white-logo").attr("src",test+"/assets/images/swiftsmalllogo.png");
             $(".red-logo").attr("src",test+"/assets/images/swiftsmalllogo.png");

@@ -42,8 +42,8 @@
                 <?php endforeach; ?>
                 </div>
 
-                <div style="height:40px; z-index:100;">
-                <section id="buttonsection" class="section white-bg" data-section-name="show-more-work"  style="z-index:1; height:40px; !important;">
+                <div style="height:40px; z-index:100;" class="showmoreworkbuttondiv">
+                <section id="buttonsection" class="section white-bg" data-section-name="show-more-work"  style="z-index:100; height:40px; !important;">
                 <div class="col-lg-12 show-btn-block" style="height:40px; margin-top:0px;">
                     <a id="brandoele" href="#featuredworks" class="btn-block show-more-work" onclick="goToAnchor('4')">Show More work</a>
                 </div>
