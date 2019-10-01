@@ -64,7 +64,6 @@
                     
                 <?php endforeach; ?>
                 </div>
-                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
 
                 <div style="height:40px; z-index:100;">
                 <section id="buttonsection" class="section white-bg" data-section-name="show-more-work"  style="z-index:1; height:40px; !important;">
