@@ -131,21 +131,27 @@
 
                 $('.show-more-work').on('click', function(){
                    // $('.hidden-work').toggleClass('d-none');
+                   if($(".hidden-work").css("display")=="block"){
+                        console.log("testblock");
+                        $("#brandoele").text('Show More Work');
+                   }else{
+                        $("#brandoele").text('Hide More Work');
+                   }
                     $(".hidden-work").fadeToggle("slow");
                     $.scrollify.update();
-                    if($('.hidden-work').is(':visible')){
-                        $(this).text('Hide More Work');
+                    /*if($('.hidden-work').is(':visible')){
+                        //$(this).text('Hide More Work');
                         $.scrollify.update();
                     }else{
                         $.scrollify.update();
                         $.scrollify.disable();
-                        $(this).text('Show More Work');
+                        //$(this).text('Show More Work');
                         setTimeout(function(){
                             $.scrollify.enable();
                             $.scrollify.update();
                         }, 500);
                     }
-                    $.scrollify.update();
+                    $.scrollify.update();*/
                     return false;
                 });
             });
@@ -319,96 +325,6 @@ $(function(){
 	  $("html, body").animate({ scrollTop: 0 }, 700);
 	  return false;
 	});
-
-/*function homeScroll(){
-	if($(window).width() <= 1024 || $(window).height() <= 670){
-		$.scrollify.disable();
-		$('.section-template').removeAttr('style');
-		
-	}else{
-		if($.scrollify.isDisabled()){
-			$.scrollify.enable();
-		}
-	}
-}*/
-
-    /*
-$(function() {
-    $.scrollify({
-        section : ".section",
-        before: function(i, el){
-            var nextEl = $(el[i]);
-            var wrapperClass = '';
-            if(nextEl.hasClass('red-bg')){
-                wrapperClass = 'red-default';
-                $(".white-logo").attr("src",test+"/assets/images/swiftsmallblack.png");
-                $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
-            }
-            else if(nextEl.hasClass('pink-bg')){
-                wrapperClass = 'pink-default';
-                $(".white-logo").attr("src",test+"/assets/images/swiftsmallblack.png");
-                $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
-            }
-            else if(nextEl.hasClass('blue-bg')){
-                wrapperClass = 'blue-default';
-                $(".white-logo").attr("src",test+"/assets/images/swiftsmallblack.png");
-                $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
-            }
-            else if(nextEl.hasClass('orange-bg')){
-                wrapperClass = 'orange-default';
-                $(".white-logo").attr("src",test+"/assets/images/swiftsmallblack.png");
-                $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
-            }
-            else if(nextEl.hasClass('green-bg')){
-                wrapperClass = 'green-default';
-                $(".white-logo").attr("src",test+"/assets/images/swiftsmallblack.png");
-                $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
-            }
-            else if(nextEl.hasClass('white-bg')){
-                wrapperClass = 'white-default';
-                $(".white-logo").attr("src",test+"/assets/images/swiftsmallblack.png");
-                $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
-            }
-            else if(nextEl.hasClass('homeblue-bg')){
-                wrapperClass = 'homeblue-default';
-                $(".white-logo").attr("src",test+"/assets/images/swiftfulllogo.png");
-                $(".red-logo").attr("src",test+"/assets/images/swiftfulllogo.png");
-            }
-
-            $('#wrapper').removeAttr('class');
-            $('#wrapper').addClass(wrapperClass);
-            $('#main-menu ul li a').removeClass('active');
-        },
-        after: function(i, el){
-            var current = $.scrollify.current();
-            current = $(current).data('section-name');
-            
-            $('#main-menu ul li a[href=#'+current+']').addClass('active');
-        },
-        sectionName : "section-name",
-        overflowScroll: true,
-    });
-}); */
-
-
-//v is potential mobile fix
-/*$.scrollify({
-    section : "section",
-    sectionName : "section-name",
-    interstitialSection : "",
-    easing: "easeOutExpo",
-    offset : 0,
-    scrollbars: true,
-    standardScrollElements: "",
-    setHeights: true,
-    overflowScroll: true,
-    updateHash: true,
-    touchScroll:true,
-    before:function() {},
-    after:function() {},
-    afterResize:function() {},
-    afterRender:function() {}
-  });*/
         </script>
     </body>
 </html>
