@@ -139,19 +139,17 @@
                    }
                     $(".hidden-work").fadeToggle("slow");
                     $.scrollify.update();
-                    /*if($('.hidden-work').is(':visible')){
-                        //$(this).text('Hide More Work');
+                    if($('.hidden-work').is(':visible')){
                         $.scrollify.update();
                     }else{
                         $.scrollify.update();
                         $.scrollify.disable();
-                        //$(this).text('Show More Work');
                         setTimeout(function(){
                             $.scrollify.enable();
                             $.scrollify.update();
                         }, 500);
                     }
-                    $.scrollify.update();*/
+                    $.scrollify.update();
                     return false;
                 });
             });
