@@ -147,12 +147,12 @@
                 <?php endif; ?>
 
                 $('#logo').on('click', function (e) {
-                    /*var target = $(this).attr('href');
+                    var target = $(this).attr('href');
                     target = target.replace('#', '');
                     target = $("[data-section-name='" + target + "']");
                     var t = $(target).offset().top;
                     $('body,html').animate({ 'scrollTop': t }, 1000)
-                    return false;*/
+                    return false;
                 });
 
                 $('.show-more-work').on('click', function(){

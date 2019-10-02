@@ -59,7 +59,7 @@
 
                <div id="wrapper" class="<?php echo $class; ?>">
                
-               <div class="fadeclass"> </div>
+               <div class="fadeclass" id="fadeclassid"> </div>
                
                 <header id="header" class="header">
     <div style="position:relative;" class="header__container mob-menu">

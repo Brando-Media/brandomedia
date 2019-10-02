@@ -29,7 +29,7 @@ p, .main-content ul{
 .container{
     width: 95%;
     max-width: 95%;
-    &.container--small{
+    &.container--small{ 
         max-width: 85%;
     }
 }
@@ -44,7 +44,7 @@ p, .main-content ul{
     }
 }
 
-.pink-bg{ 
+.pink-bg{  
     background: $pink;
     *{
         color: #fff;
