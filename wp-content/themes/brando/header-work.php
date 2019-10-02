@@ -58,7 +58,7 @@
             </header>-->
                 <div class="fadeclass"> </div>
                
-                <header id="header" class="header">
+                <header id="header" class="header" style="position:inherit;">
     <div style="position:relative;" class="header__container mob-menu">
             <div class="brand-icon-block">
                 <a href="#home" id="logo" class="float-left">
