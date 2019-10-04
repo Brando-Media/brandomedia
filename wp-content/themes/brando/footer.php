@@ -13,7 +13,7 @@
 
             var test = '<?php echo bloginfo('template_directory'); ?>';
             console.log(test);
-            $.scrollify.disable();
+           // $.scrollify.disable();
             
             
             
