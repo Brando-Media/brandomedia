@@ -168,11 +168,11 @@
                 });
 
             $(".uparrow").click(function(){
-                $.scrollify.move();
+                //$.scrollify.move();
             });
                 setTimeout(function(){
-                    //$.scrollify.enable();
-                    $.scrollify.move("#" + type);
+                    $.scrollify.enable();
+                    //$.scrollify.move("#" + type);
                 }, 200);
             });
 
