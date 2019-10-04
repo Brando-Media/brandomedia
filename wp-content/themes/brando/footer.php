@@ -13,6 +13,7 @@
 
             var test = '<?php echo bloginfo('template_directory'); ?>';
             console.log(test);
+            $.scrollify.disable();
             
             
             
@@ -170,7 +171,7 @@
                 $.scrollify.move();
             });
                 setTimeout(function(){
-                    $.scrollify.enable();
+                    //$.scrollify.enable();
                     $.scrollify.move("#" + type);
                 }, 200);
             });
