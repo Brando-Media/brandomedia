@@ -771,7 +771,7 @@ p, .main-content ul {
 }
 
 .orange-bg {
-  background: #EF680C;
+  background: #FF7F50;
 }
 .orange-bg * {
   color: white;
@@ -873,33 +873,33 @@ p, .main-content ul {
   color: #fff;
 }
 #wrapper.blue-default #main-menu ul > li a.active {
-  color: #EF680C;
+  color: #FF7F50;
   transition: all 0.5s;
 }
 #wrapper.blue-default .open-mob-menu-btn__icon {
-  background-color: #EF680C;
+  background-color: #FF7F50;
 }
 #wrapper.blue-default .open-mob-menu-btn__icon::before, #wrapper.blue-default .open-mob-menu-btn__icon::after {
-  background-color: #EF680C;
+  background-color: #FF7F50;
 }
 #wrapper.homeblue-default #main-menu ul > li a {
-  color: #EF680C;
+  color: #FF7F50;
 }
 #wrapper.homeblue-default #main-menu ul > li a.active {
   color: #74BDAF;
   transition: all 0.5s;
 }
 #wrapper.homeblue-default .open-mob-menu-btn__icon {
-  background-color: #EF680C;
+  background-color: #FF7F50;
 }
 #wrapper.homeblue-default .open-mob-menu-btn__icon::before, #wrapper.homeblue-default .open-mob-menu-btn__icon::after {
-  background-color: #EF680C;
+  background-color: #FF7F50;
 }
 #wrapper.green-default #main-menu ul > li a {
   color: #fff;
 }
 #wrapper.green-default #main-menu ul > li a.active {
-  color: #EF680C;
+  color: #FF7F50;
   transition: all 0.5s;
 }
 #wrapper.green-default .open-mob-menu-btn__icon {
@@ -912,7 +912,7 @@ p, .main-content ul {
   color: #1e3b4c;
 }
 #wrapper.white-default #main-menu ul > li a.active {
-  color: #EF680C;
+  color: #FF7F50;
   transition: all 0.5s;
 }
 #wrapper.white-default .open-mob-menu-btn__icon {
@@ -1132,7 +1132,7 @@ input.form-control {
   font-weight: normal;
   font-style: normal;
   border: 1px solid;
-  background-color: #EF680C;
+  background-color: #FF7F50;
   float: left;
 }
 .contact-form .wpcf7-form-control-wrap {
