@@ -394,9 +394,6 @@ $(function(){
             }
         });
     });
-    $(document).ready(function(){
-        
-    });
         </script>
     </body>
 </html>
