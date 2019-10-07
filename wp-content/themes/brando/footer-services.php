@@ -8,6 +8,7 @@
         <script src="<?php bloginfo('template_directory'); ?>/javascript/scrollify.js"></script>
 
         <script>
+        $.scrollify.disable();
                         var test = '<?php echo bloginfo('template_directory'); ?>';
 
             function hideMobileNav(){
@@ -164,6 +165,26 @@
                     }
                     $.scrollify.update();
                     return false;
+                });
+            });
+
+            $(window).load(function(){
+                var project1 = $('section:nth-of-type(1)').offset();
+                var project2 = $('section:nth-of-type(2)').offset();
+                var project3 = $('section:nth-of-type(3)').offset();
+                //var project6 = $('section:nth-of-type(6)').offset();
+                var $window = $(window);
+                
+                $window.scroll(function() {
+                    if ( $window.scrollTop() >= project3.top ) {
+                        $("#wrapper").removeClass().addClass("white-default");
+
+                    }else if ( $window.scrollTop() >= project2.top ) {
+                        $("#wrapper").removeClass().addClass("blue-default");
+
+                    }else if ( $window.scrollTop() >= project1.top) {
+                        $("#wrapper").removeClass().addClass("orange-default");
+                    }
                 });
             });
         </script>
