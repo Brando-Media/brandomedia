@@ -380,29 +380,19 @@ $(function(){
         $window.scroll(function() {
             if ( $window.scrollTop() >= project5.top ) {
                 $("#wrapper").removeClass().addClass("orange-default");
-                console.log("test5");
-
             }else if ( $window.scrollTop() >= project4.top ) {
                 $("#wrapper").removeClass().addClass("blue-default");
-                console.log("test4");
 
             }else if ( $window.scrollTop() >= project3.top ) {
                 $("#wrapper").removeClass().addClass("white-default");
-                console.log("test3");
 
             }else if ( $window.scrollTop() >= project2.top ) {
                 $("#wrapper").removeClass().addClass("orange-default");
-                console.log("test2");
 
             }else if ( $window.scrollTop() >= project1.top) {
-                console.log(project1.top);
-            console.log($window.scrollTop());
-                console.log("test1");
                 $("#wrapper").removeClass().addClass("homeblue-default");
             }
-
         });
-
     });
     $(document).ready(function(){
         
