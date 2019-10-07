@@ -181,11 +181,11 @@
 
                     }else if ( $window.scrollTop() >= project2.top ) {
                         $("#wrapper").removeClass().addClass("blue-default");
-
+                        $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
                     }else if ( $window.scrollTop() >= project1.top) {
                         $("#wrapper").removeClass().addClass("orange-default");
                     }
-                });
+                }); 
             });
         </script>
     </body>

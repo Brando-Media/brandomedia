@@ -369,6 +369,12 @@ $(function(){
 	  return false;
 	});
     $(window).load(function(){
+        if($(window).width() <= 991){
+            $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
+            console.log("gelo");
+        }else{
+            $(".red-logo").attr("src",test+"/assets/images/swiftfulllogo.png");
+        }  
         var project1 = $('.homeblue-bg').offset();
         var project2 = $('.aboutsection').offset();
         var project3 = $('#featuredworks').offset();
@@ -382,6 +388,7 @@ $(function(){
                 $("#wrapper").removeClass().addClass("orange-default");
             }else if ( $window.scrollTop() >= project4.top ) {
                 $("#wrapper").removeClass().addClass("blue-default");
+                $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
 
             }else if ( $window.scrollTop() >= project3.top ) {
                 $("#wrapper").removeClass().addClass("white-default");
@@ -391,8 +398,18 @@ $(function(){
 
             }else if ( $window.scrollTop() >= project1.top) {
                 $("#wrapper").removeClass().addClass("homeblue-default");
+                if($(window).width() <= 991){
+                    $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
+                    console.log("gelo");
+                }else{
+                    $(".red-logo").attr("src",test+"/assets/images/swiftfulllogo.png");
+                }  
             }
         });
+
+    });
+    $(document).ready(function(){
+        
     });
         </script>
     </body>
