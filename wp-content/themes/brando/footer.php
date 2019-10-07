@@ -20,7 +20,7 @@
             <?php if(!is_singular('work')): ?>
                 $(window).on('load', function(){
                     //$.scrollify.move("#about");
-                    $.scrollify({
+                    $.scrollify({ 
                         section : ".section",
                         before: function(i, el){
                             var nextEl = $(el[i]);
@@ -171,7 +171,7 @@
                 //$.scrollify.move();
             });
                 setTimeout(function(){
-                    $.scrollify.enable();
+                    //$.scrollify.enable();
                     //$.scrollify.move("#" + type);
                 }, 200);
             });
@@ -368,6 +368,45 @@ $(function(){
 	  $("html, body").animate({ scrollTop: 0 }, 700);
 	  return false;
 	});
+    $(window).load(function(){
+        var project1 = $('.homeblue-bg').offset();
+        var project2 = $('.aboutsection').offset();
+        var project3 = $('#featuredworks').offset();
+        var project4 = $('.servicesclass').offset();
+        var project5 = $('.contactclass').offset();
+        //var project6 = $('section:nth-of-type(6)').offset();
+        var $window = $(window);
+        
+        $window.scroll(function() {
+            if ( $window.scrollTop() >= project5.top ) {
+                $("#wrapper").removeClass().addClass("orange-default");
+                console.log("test5");
+
+            }else if ( $window.scrollTop() >= project4.top ) {
+                $("#wrapper").removeClass().addClass("blue-default");
+                console.log("test4");
+
+            }else if ( $window.scrollTop() >= project3.top ) {
+                $("#wrapper").removeClass().addClass("white-default");
+                console.log("test3");
+
+            }else if ( $window.scrollTop() >= project2.top ) {
+                $("#wrapper").removeClass().addClass("orange-default");
+                console.log("test2");
+
+            }else if ( $window.scrollTop() >= project1.top) {
+                console.log(project1.top);
+            console.log($window.scrollTop());
+                console.log("test1");
+                $("#wrapper").removeClass().addClass("homeblue-default");
+            }
+
+        });
+
+    });
+    $(document).ready(function(){
+        
+    });
         </script>
     </body>
 </html>

@@ -4,7 +4,7 @@ $services    = get_sub_field('services');
 $title       = get_sub_field('title');
 $sectionName = str_replace(' ', '', strtolower($title));
 ?>
-<section class="section <?php echo $bg; ?>-bg d-flex" data-section-name="<?php echo $sectionName; ?>">
+<section class="section servicesclass <?php echo $bg; ?>-bg d-flex" data-section-name="<?php echo $sectionName; ?>">
     <div class="container container--small align-self-center">
         <h2 class="main-title"><?php echo $title; ?></h2>
         <?php if($services): ?>
