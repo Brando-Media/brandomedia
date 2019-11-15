@@ -67,7 +67,7 @@
                 <header id="header" class="header">
     <div style="position:relative;" class="header__container mob-menu">
             <div class="brand-icon-block">
-                <a href="#home" id="logo" class="float-left">
+                <a href="http://brando.media/brando/#home" id="logo" class="float-left">
                     <img style="display:none; position:inherit;" class="mobile-logo" src="<?php bloginfo('template_url') ?>/assets/images/swiftsmalllogo.png" alt="Brando Media" title="Brando Media" />
                     <img id="whitelogo" class="white-logo" src="<?php bloginfo('template_url') ?>/assets/images/swiftsmallblack.png" alt="Brando Media" title="Brando Media" />
                     <img class="red-logo" src="<?php bloginfo('template_url') ?>/assets/images/swiftfulllogo.png" alt="Brando Media" title="Brando Media" />
