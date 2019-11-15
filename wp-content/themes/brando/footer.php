@@ -258,6 +258,7 @@ $(function(){
     $(window).on('resize', function(){
         menuMobile();
         pageResized();
+        headerChangeResize();
         //resizePageHeaderChange();
 
     })
@@ -367,7 +368,23 @@ $(function(){
 	$(".logo-header").click(function() {
 	  $("html, body").animate({ scrollTop: 0 }, 700);
 	  return false;
-	});
+    });
+    function headerChangeResize(){
+        if($(window).width() <= 991){
+            $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
+            console.log("gelo");
+        }else{
+            $(".red-logo").attr("src",test+"/assets/images/swiftfulllogo.png");
+        }  
+        var project1 = $('.homeblue-bg').offset();
+        var project2 = $('.aboutsection').offset();
+        var project3 = $('#featuredworks').offset();
+        var project4 = $('.servicesclass').offset();
+        var project5 = $('.contactclass').offset();
+        //var project6 = $('section:nth-of-type(6)').offset();
+        var $window = $(window);
+        console.log(project5);
+    }
     $(window).load(function(){
         if($(window).width() <= 991){
             $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
@@ -384,19 +401,20 @@ $(function(){
         var $window = $(window);
         
         $window.scroll(function() {
-            if ( $window.scrollTop() >= project5.top ) {
+            console.log($window.scrollTop());
+            if ( $window.scrollTop() >= project5.top - 80 ) {
                 $("#wrapper").removeClass().addClass("orange-default");
-            }else if ( $window.scrollTop() >= project4.top ) {
+            }else if ( $window.scrollTop() >= project4.top - 80) {
                 $("#wrapper").removeClass().addClass("blue-default");
                 $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
 
-            }else if ( $window.scrollTop() >= project3.top ) {
+            }else if ( $window.scrollTop() >= project3.top - 80) {
                 $("#wrapper").removeClass().addClass("white-default");
 
-            }else if ( $window.scrollTop() >= project2.top ) {
+            }else if ( $window.scrollTop() >= project2.top - 80) {
                 $("#wrapper").removeClass().addClass("orange-default");
 
-            }else if ( $window.scrollTop() >= project1.top) {
+            }else if ( $window.scrollTop() >= project1.top - 80) {
                 $("#wrapper").removeClass().addClass("homeblue-default");
                 if($(window).width() <= 991){
                     $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
