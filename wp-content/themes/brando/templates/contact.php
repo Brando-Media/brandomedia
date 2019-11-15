@@ -20,7 +20,7 @@ $sectionName = str_replace(' ', '', strtolower($title));
                     <?php
                     echo $address ? "<p>{$address}</p>" : '';
                     echo $email ? "<p><a href='mailto:{$email}'>{$email}</a></p>" : '';
-                    echo $phone ? "<p><a href="{$phone}">{$phone}</a></p>" : '';
+                    echo $phone ? "<p>{$phone}</p>" : '';
                     ?>
                 </div>
             </div>
