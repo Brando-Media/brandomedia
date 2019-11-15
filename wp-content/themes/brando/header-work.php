@@ -97,8 +97,8 @@
                                     ?>
                                     <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link" href="<?php echo $url; ?>"><?php echo $title ?></a></li>
                                 <?php endwhile; ?>-->
-                                <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link" href="#About">ABOUT</a></li>
-                                <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link active" href="#ourfeaturedwork">OUR WORK</a></li>
+                                <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link" href="http://brando.media/brando/#about">ABOUT</a></li>
+                                <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link active" href="http://brando.media/brando/#ourfeaturedwork">OUR WORK</a></li>
                                 <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link" href="#services">SERVICES</a></li>
                                 <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link" href="#contact">CONTACT</a></li>
 
