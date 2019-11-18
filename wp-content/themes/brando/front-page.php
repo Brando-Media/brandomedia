@@ -1,3 +1,14 @@
+<style>
+   #myVideo {
+ position: fixed;
+ right: 0;
+ opacity: 60%;
+ bottom: 0;
+ min-width: 100%;
+ min-height: 100%;
+}
+</style>
+
 <?php 
 /*
 Template Name: Front Page
