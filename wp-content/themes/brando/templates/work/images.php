@@ -7,8 +7,8 @@ $images = get_sub_field('images'); ?>
             $class = 'pl-0 pr-2';
             if($k%2==1) $class = 'pr-0 pl-2';
             ?>
-            <div class="col-lg-6 <?php echo $class; ?>">
-                <img class="img-fluid w-100" src="<?php echo show_image($image['url'], $image['width'], $image['height'], 75) ?>">
+            <div class="col-lg-6 pl0work <?php echo $class; ?>">
+                <img class="img-fluid w-100 h100work" src="<?php echo show_image($image['url'], $image['width'], $image['height'], 75) ?>">
             </div>
         <?php endforeach; ?>
     </div>
