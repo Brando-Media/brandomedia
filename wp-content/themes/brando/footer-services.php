@@ -176,6 +176,9 @@
                 var $window = $(window);
                 
                 $window.scroll(function() {
+                    var project1 = $('section:nth-of-type(1)').offset();
+                    var project2 = $('section:nth-of-type(2)').offset();
+                    var project3 = $('section:nth-of-type(3)').offset();
                     if ( $window.scrollTop() >= project3.top ) {
                         $("#wrapper").removeClass().addClass("white-default");
 
