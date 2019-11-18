@@ -1442,7 +1442,7 @@ textarea::placeholder {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 /*# sourceMappingURL=main.css.map */
