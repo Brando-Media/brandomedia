@@ -285,7 +285,7 @@ p, .main-content ul{
                 margin-right: 0;
             }
             a{
-                color: #EF680C;
+                color: $orange;
                 text-transform: uppercase;
                 transition: color 1.5s
             }
@@ -665,7 +665,7 @@ textarea::-webkit-input-placeholder {
   textarea::placeholder {color: $contactcolour!important;}
 
   .orangefont{
-      color:#EF680C;
+      color:$orange;
   }
     .fw100{
         font-weight:100;
@@ -690,7 +690,7 @@ textarea::-webkit-input-placeholder {
 
  .servicefont{
      h3{
-         color: #EF680C;
+         color: $orange;
          font-weight:100;
          strong{
             color:white;

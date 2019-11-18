@@ -982,7 +982,7 @@ p, .main-content ul {
   margin-right: 0;
 }
 #main-menu ul > li a {
-  color: #EF680C;
+  color: #FF7F50;
   text-transform: uppercase;
   transition: color 1.5s;
 }
@@ -1357,7 +1357,7 @@ textarea::placeholder {
 }
 
 .orangefont {
-  color: #EF680C;
+  color: #FF7F50;
 }
 
 .fw100 {
@@ -1377,7 +1377,7 @@ textarea::placeholder {
 }
 
 .servicefont h3 {
-  color: #EF680C;
+  color: #FF7F50;
   font-weight: 100;
 }
 .servicefont h3 strong {
