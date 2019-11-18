@@ -1445,4 +1445,8 @@ textarea::placeholder {
   object-fit: fill;
 }
 
+#featuredworks {
+  background: white !important;
+}
+
 /*# sourceMappingURL=main.css.map */
