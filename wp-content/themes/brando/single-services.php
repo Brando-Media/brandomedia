@@ -2,7 +2,7 @@
 $completed = get_field('what_we_done');
 get_header('services'); ?>
             <div class="row">
-                    <div class="services-content" style="font-size:42px;">
+                    <div class="services-content" style="font-size:42px;display:none;">
                         <p style="font-style:gotham-light"> <?php  the_content(); ?> </p>
                     </div>
                 <?php if($completed): ?>
