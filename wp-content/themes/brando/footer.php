@@ -401,6 +401,11 @@ $(function(){
         var $window = $(window);
         
         $window.scroll(function() {
+            var project1 = $('.homeblue-bg').offset();
+            var project2 = $('.aboutsection').offset();
+            var project3 = $('#featuredworks').offset();
+            var project4 = $('.servicesclass').offset();
+            var project5 = $('.contactclass').offset();
             console.log($window.scrollTop());
             if ( $window.scrollTop() >= project5.top - 80 ) {
                 $("#wrapper").removeClass().addClass("orange-default");
