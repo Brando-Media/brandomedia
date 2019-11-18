@@ -741,3 +741,8 @@ textarea::-webkit-input-placeholder {
     
 
 }
+@media only screen and (max-width: 991px) and (min-width:600px){
+    .work-item {
+        width:50%;
+    }
+}
