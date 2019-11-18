@@ -274,7 +274,8 @@ $(function(){
 
     function menuMobile(){
         if($("#fadeclassid").css("display")=="none"){
-            console.log("hello");
+            console.log("helloO")
+            $(".header").css('background','#1e3b4c4a');
             //$(".mobile-logo").toggle();
             //$(".white-logo").toggle();
            // $(".red-logo").toggle();
@@ -408,18 +409,23 @@ $(function(){
             var project5 = $('.contactclass').offset();
             console.log($window.scrollTop());
             if ( $window.scrollTop() >= project5.top - 80 ) {
+                $(".header").css('background','transparent');
                 $("#wrapper").removeClass().addClass("orange-default");
             }else if ( $window.scrollTop() >= project4.top - 80) {
+                $(".header").css('background','transparent');
                 $("#wrapper").removeClass().addClass("blue-default");
                 $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
 
             }else if ( $window.scrollTop() >= project3.top - 80) {
+                $(".header").css('background','transparent');
                 $("#wrapper").removeClass().addClass("white-default");
 
             }else if ( $window.scrollTop() >= project2.top - 80) {
+                $(".header").css('background','transparent');
                 $("#wrapper").removeClass().addClass("orange-default");
 
             }else if ( $window.scrollTop() >= project1.top - 80) {
+                $(".header").css('background','#1e3b4c4a');
                 $("#wrapper").removeClass().addClass("homeblue-default");
                 if($(window).width() <= 991){
                     $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
