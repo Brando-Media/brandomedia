@@ -19,6 +19,9 @@ get_header(); ?>
     <video autoplay muted loop id='myVideo'>
          <source src='http://brando.media/brando/wp-content/uploads/2019/11/Home_video.mp4' type=“video/mp4”>
     </video>
+    <video width="320" height="240" controls>
+        <source src='http://brando.media/brando/wp-content/uploads/2019/11/Home_video.mp4' type="video/mp4">
+    </video>
     <div>
    
     </section>
