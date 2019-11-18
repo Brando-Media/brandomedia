@@ -5,10 +5,15 @@ Template Name: Front Page
 get_header(); ?>
     <section class="section homeblue-bg" data-section-name="home">
     <div style="margin:auto 0;"><!--<img class="white-logo" style="max-height: 100%;  max-width: 100%; width: auto;height: auto;position: absolute;  top: 0;  bottom: 0;  left: 0;  right: 0;  margin: auto;" src="<?php bloginfo('template_url') ?>/assets/images/home.gif" alt="Brando Media"  />--><div>
-    <?php         
-    while(have_rows(the_content())){ ?>
-        <div style="margin:auto 0;"><?php echo the_content(); ?> <div>
-    <?php } ?>
+    <div style="margin:auto 0;"><?php echo the_content(); ?> <div>
+    <?php 
+    if ( have_posts() ) {
+        while ( have_posts() ) { ?>
+            <div style="margin:auto 0;"><?php echo the_content(); ?> <div>
+
+        <?php }
+    }
+    ?>
     </section>
   
     <?php 
