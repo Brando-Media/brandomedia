@@ -1422,5 +1422,14 @@ textarea::placeholder {
     width: 50%;
   }
 }
+@media only screen and (max-width: 991px) {
+  .work-completed {
+    padding-left: 0px !important;
+  }
+
+  .left-content-work-block {
+    padding-right: 0px !important;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
