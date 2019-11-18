@@ -9,7 +9,7 @@ get_header(); ?>
     <?php 
     if ( have_posts() ) {
         while ( have_posts() ) { ?>
-            <div style="margin:auto 0;"><?php echo the_content(); ?> <div>
+            <div style="margin:auto 0;"><?php the_content(); ?> <div>
 
         <?php }
     }
