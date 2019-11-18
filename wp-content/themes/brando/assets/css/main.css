@@ -723,7 +723,7 @@ button:disabled {
   height: 100%;
   min-height: 100vh;
   min-width: 100vw;
-  background: #EF680C;
+  background: #FF7F50;
   display: none;
   position: fixed;
   z-index: 99;
