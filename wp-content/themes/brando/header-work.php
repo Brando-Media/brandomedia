@@ -84,7 +84,7 @@
                                     <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link" href="<?php echo $url; ?>"><?php echo $title ?></a></li>
                                 <?php endwhile; ?>-->
                                 <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link" href="../../#about">ABOUT</a></li>
-                                <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link active" href="#featuredworks">OUR WORK</a></li>
+                                <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link active" href="#home">OUR WORK</a></li>
                                 <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link" href="../../#services">SERVICES</a></li>
                                 <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link" href="../../#contact">CONTACT</a></li>
             <?php } else { ?>
@@ -98,7 +98,7 @@
                                     <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link" href="<?php echo $url; ?>"><?php echo $title ?></a></li>
                                 <?php endwhile; ?>-->
                                 <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link" href="../../#about">ABOUT</a></li>
-                                <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link active" href="#featuredworks">OUR WORK</a></li>
+                                <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link active" href="#home">OUR WORK</a></li>
                                 <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link" href="../../#services">SERVICES</a></li>
                                 <li  class="header__list-item"><a onclick="hideMobileNav()" class="hover-underline-link about-link" href="../../#contact">CONTACT</a></li>
 
