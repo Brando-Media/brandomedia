@@ -747,6 +747,10 @@ button:disabled {
   transition: all 1.5s !important;
 }
 
+.tparrows {
+  padding-top: initial !important;
+}
+
 body {
   font-family: Poppins;
   font-weight: normal;

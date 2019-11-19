@@ -15,6 +15,10 @@ $fontsize: 13px;
 $contentpadding: 70px;
 $contactcolour: white;
 
+.tparrows{
+    padding-top:initial!important;
+}
+
 body {
     font-family: Poppins;
     font-weight: normal;
@@ -64,6 +68,7 @@ p, .main-content ul{
         padding-top:45px;
     }
 }
+
 
 .green-bg{
     background: $green;
