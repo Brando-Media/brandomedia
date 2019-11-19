@@ -947,6 +947,7 @@ p, .main-content ul {
 }
 
 #header {
+  background: none !important;
   position: fixed;
   top: 0;
   left: 0;
