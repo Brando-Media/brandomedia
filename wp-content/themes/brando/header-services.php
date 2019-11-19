@@ -37,8 +37,8 @@
             <!--<header id="header">
                 <div class="container clearfix">
                     <a href="http://brando.media/brando#home" id="logo" class="float-left">
-                        <img class="white-logo" src="<?php bloginfo('template_url') ?>/assets/images/swiftsmallblack.png" alt="Brando Media" title="Brando Media" />
-                        <img class="red-logo" src="<?php bloginfo('template_url') ?>/assets/images/swiftsmallorange.png" alt="Brando Media" title="Brando Media" />
+                        <img class="white-logo" src="<?php bloginfo('template_url') ?>/assets/images/swiftsmallblack.png" alt="Swift Studios" title="Swift Studios" />
+                        <img class="red-logo" src="<?php bloginfo('template_url') ?>/assets/images/swiftsmallorange.png" alt="Swift Studios" title="Swift Studios" />
                     </a>
                     <?php if(have_rows('content', 2)): ?>
                         <nav id="main-menu" class="float-right"> 
@@ -68,9 +68,9 @@
     <div style="position:relative;" class="header__container mob-menu">
             <div class="brand-icon-block">
                 <a href="http://brando.media/brando/#home" id="logo" class="float-left">
-                    <img style="display:none; position:inherit;" class="mobile-logo" src="<?php bloginfo('template_url') ?>/assets/images/swiftsmalllogo.png" alt="Brando Media" title="Brando Media" />
-                    <img id="whitelogo" class="white-logo" src="<?php bloginfo('template_url') ?>/assets/images/swiftsmallblack.png" alt="Brando Media" title="Brando Media" />
-                    <img class="red-logo" src="<?php bloginfo('template_url') ?>/assets/images/swiftfulllogo.png" alt="Brando Media" title="Brando Media" />
+                    <img style="display:none; position:inherit;" class="mobile-logo" src="<?php bloginfo('template_url') ?>/assets/images/swiftsmalllogo.png" alt="Swift Studios" title="Swift Studios" />
+                    <img id="whitelogo" class="white-logo" src="<?php bloginfo('template_url') ?>/assets/images/swiftsmallblack.png" alt="Swift Studios" title="Swift Studios" />
+                    <img class="red-logo" src="<?php bloginfo('template_url') ?>/assets/images/swiftfulllogo.png" alt="Swift Studios" title="Swift Studios" />
                 </a>
             </div>
 		<div class="link-list-block abs1200" id="main-menu">
