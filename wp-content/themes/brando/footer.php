@@ -12,7 +12,6 @@
         
 
             var test = '<?php echo bloginfo('template_directory'); ?>';
-            console.log(test);
            // $.scrollify.disable();
             
             
@@ -84,7 +83,6 @@
                                 if($(window).width() <= 991){
                                     $(".white-logo").attr("src",test+"/assets/images/swiftsmallblack.png");
                                     $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
-                                    console.log("gelo");
                                 }else{
                                     $(".white-logo").attr("src",test+"/assets/images/swiftfulllogo.png");
                                     $(".red-logo").attr("src",test+"/assets/images/swiftfulllogo.png");
@@ -133,7 +131,6 @@
                 $('.show-more-work').on('click', function(){
                    // $('.hidden-work').toggleClass('d-none');
                    if($(".hidden-work").css("display")=="block"){
-                        console.log("testblock");
                         $("#brandoele").text('Show More Work');
                    }else{
                         $("#brandoele").text('Hide More Work');
@@ -161,8 +158,6 @@
             $(document).ready(function(e){
                 var type = window.location.hash.substr(1);
                 $.scrollify.disable();
-                //console.log(type);
-
                 $(".downarrow").click(function(){
                     $.scrollify.next();
                 });
@@ -274,7 +269,6 @@ $(function(){
 
     function menuMobile(){
         if($("#fadeclassid").css("display")=="none"){
-            console.log("helloO")
             $(".header").css('background','#1e3b4c4a');
             //$(".mobile-logo").toggle();
             //$(".white-logo").toggle();
@@ -294,7 +288,6 @@ $(function(){
         if($(window).width() <= 991){
             $(".white-logo").attr("src",test+"/assets/images/swiftsmallblack.png");
             $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
-            console.log("gelo");
         }else{
                 $(".white-logo").attr("src",test+"/assets/images/swiftsmallblack.png");
                 $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
@@ -331,7 +324,6 @@ $(function(){
             $(".fadeclass").fadeToggle("slow");
             $(".fadeclass").css("display","none");
         if($("#fadeclassid").css("display")=="none"){
-            console.log("")
         }else{
            
             $("#mobmenuwhite").toggleClass("menuwhitebg");
@@ -373,7 +365,6 @@ $(function(){
     function headerChangeResize(){
         if($(window).width() <= 991){
             $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
-            console.log("gelo");
         }else{
             $(".red-logo").attr("src",test+"/assets/images/swiftfulllogo.png");
         }  
@@ -384,12 +375,10 @@ $(function(){
         var project5 = $('.contactclass').offset();
         //var project6 = $('section:nth-of-type(6)').offset();
         var $window = $(window);
-        console.log(project5);
     }
     $(window).load(function(){
         if($(window).width() <= 991){
             $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
-            console.log("gelo");
         }else{
             $(".red-logo").attr("src",test+"/assets/images/swiftfulllogo.png");
         }  
@@ -407,7 +396,6 @@ $(function(){
             var project3 = $('#featuredworks').offset();
             var project4 = $('.servicesclass').offset();
             var project5 = $('.contactclass').offset();
-            console.log($window.scrollTop());
             if ( $window.scrollTop() >= project5.top - 80 ) {
                 $(".header").css('background','transparent');
                 $("#wrapper").removeClass().addClass("orange-default");
@@ -429,7 +417,6 @@ $(function(){
                 $("#wrapper").removeClass().addClass("homeblue-default");
                 if($(window).width() <= 991){
                     $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
-                    console.log("gelo");
                 }else{
                     $(".red-logo").attr("src",test+"/assets/images/swiftfulllogo.png");
                 }  

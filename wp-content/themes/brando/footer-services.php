@@ -110,7 +110,6 @@
                                 if($(window).width() <= 991){
                                     $(".white-logo").attr("src",test+"/assets/images/swiftsmallblack.png");
                                     $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
-                                    console.log("gelo");
                                 }else{
                                     $(".white-logo").attr("src",test+"/assets/images/swiftfulllogo.png");
                                     $(".red-logo").attr("src",test+"/assets/images/swiftfulllogo.png");
