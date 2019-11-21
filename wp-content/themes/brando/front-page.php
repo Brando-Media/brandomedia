@@ -15,7 +15,7 @@
 Template Name: Front Page
 */
 get_header(); ?>
-    <section class="section homeblue-bg" data-section-name="home">
+    <section class="homeblue-bg" data-section-name="home">
     <div style="margin:auto 0;"><!--<img class="white-logo" style="max-height: 100%;  max-width: 100%; width: auto;height: auto;position: absolute;  top: 0;  bottom: 0;  left: 0;  right: 0;  margin: auto;" src="<?php bloginfo('template_url') ?>/assets/images/home.gif" alt="Brando Media"  />-->
     <?php echo do_shortcode('[rev_slider alias="slider-1"][/rev_slider]'); ?>
     <!--<video width="320" height="240" autoplay muted loop playsinline id='myVideo'>
