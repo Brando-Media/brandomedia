@@ -797,10 +797,10 @@ p, .main-content ul {
 
 .homeblue-bg {
   background: white;
+  padding-top: 100px;
 }
 .homeblue-bg * {
   color: #74bdaf;
-  padding-top: 45px;
 }
 
 .green-bg {
