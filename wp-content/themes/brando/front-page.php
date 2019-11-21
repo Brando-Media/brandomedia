@@ -21,8 +21,7 @@ get_header(); ?>
     <!--<video width="320" height="240" autoplay muted loop playsinline id='myVideo'>
         <source src='http://brando.media/brando/wp-content/uploads/2019/11/Home_video.mp4' type="video/mp4">
     </video>-->
-    <div>
-   
+   </div>
     </section>
   
     <?php 
