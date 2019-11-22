@@ -106,6 +106,13 @@
             <?php endif; ?> 
 
             $(function() {
+                $(document).on('click', 'a[href^="#"]', function (event) {
+                    event.preventDefault();
+
+                    $('html, body').animate({
+                        scrollTop: $($.attr(this, 'href')).offset().top
+                    }, 500);
+                });
                 <?php if(!is_singular('work')): ?>
                     $('#main-menu ul li a').on('click', function (e) {
                         var target = $(this).attr('href');
