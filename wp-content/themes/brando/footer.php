@@ -104,6 +104,8 @@
                     });
                 });
             <?php endif; ?> 
+            $(document).load( function() { $('body').fadeIn(); });
+
 
             $(function() {
                 $(document).on('click', 'a[href^="#"]', function (event) {
