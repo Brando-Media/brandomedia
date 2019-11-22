@@ -396,23 +396,23 @@ $(function(){
             var project3 = $('#featuredworks').offset();
             var project4 = $('.servicesclass').offset();
             var project5 = $('.contactclass').offset();
-            if ( $window.scrollTop() >= project5.top - 80 ) {
+            if ( $window.scrollTop() >= project5.top ) {
                 $(".header").css('background','transparent');
                 $("#wrapper").removeClass().addClass("orange-default");
-            }else if ( $window.scrollTop() >= project4.top - 80) {
+            }else if ( $window.scrollTop() >= project4.top) {
                 $(".header").css('background','transparent');
                 $("#wrapper").removeClass().addClass("blue-default");
                 $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
 
-            }else if ( $window.scrollTop() >= project3.top - 80) {
+            }else if ( $window.scrollTop() >= project3.top) {
                 $(".header").css('background','transparent');
                 $("#wrapper").removeClass().addClass("white-default");
 
-            }else if ( $window.scrollTop() >= project2.top - 80) {
+            }else if ( $window.scrollTop() >= project2.top) {
                 $(".header").css('background','transparent');
                 $("#wrapper").removeClass().addClass("orange-default");
 
-            }else if ( $window.scrollTop() >= project1.top - 80) {
+            }else if ( $window.scrollTop() >= project1.top) {
                 $(".header").css('background','#1e3b4c4a');
                 $("#wrapper").removeClass().addClass("homeblue-default");
                 if($(window).width() <= 991){
