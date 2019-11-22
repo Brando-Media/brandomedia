@@ -322,8 +322,8 @@ $(function(){
     function hideMobileNav(){
         $(".header__list").fadeToggle("slow");
             $(".fadeclass").fadeToggle("slow");
-            $(".fadeclass").css("display","none");
         if($("#fadeclassid").css("display")=="none"){
+
         }else{
            
             $("#mobmenuwhite").toggleClass("menuwhitebg");
@@ -338,6 +338,8 @@ $(function(){
                 $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
             }
         }
+            
+            $(".fadeclass").css("display","none");
         
     }
 
