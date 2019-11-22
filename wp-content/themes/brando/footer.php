@@ -111,7 +111,7 @@
 
                     $('html, body').animate({
                         scrollTop: $($.attr(this, 'href')).offset().top
-                    }, 500);
+                    }, 1000);
                 });
                 <?php if(!is_singular('work')): ?>
                     $('#main-menu ul li a').on('click', function (e) {
