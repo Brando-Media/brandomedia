@@ -4,7 +4,7 @@
         <meta http-equiv="X-UA-Compatible" content="chrome=1">
         <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title><?php bloginfo('name'); ?></title>
+        <title>Swift Studio</title>
         <meta name="description" content="<?php bloginfo('description'); ?>">
         
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen">
