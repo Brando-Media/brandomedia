@@ -29,7 +29,7 @@
 
                     <div class="col-lg-6 work-item <?php echo $class; ?>">
                         <div class="work-item-block">
-                            <a id="<?php echo $workpos ?>" href="<?php echo get_permalink($work->ID); ?>">
+                            <a id="<?php echo $workpos ?>" href="<?php echo get_permalink($work->ID); ?>" rel=”follow”>
                                 <?php if($image): ?>
                                     <img class="img-fluid w-100" src="<?php echo $image['url'] ?>" />
                                 <?php endif; ?>
