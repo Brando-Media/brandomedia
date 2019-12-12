@@ -29,9 +29,9 @@
 
                     <div class="col-lg-6 work-item <?php echo $class; ?>">
                         <div class="work-item-block">
-                            <a alt="<?php echo $work->post_title ?>" id="<?php echo $workpos ?>" href="<?php echo get_permalink($work->ID); ?>" rel=”follow”>
+                            <a  id="<?php echo $workpos ?>" href="<?php echo get_permalink($work->ID); ?>" rel=”follow”>
                                 <?php if($image): ?>
-                                    <img class="img-fluid w-100" src="<?php echo $image['url'] ?>" />
+                                    <img  alt="<?php echo $work->post_title ?>" class="img-fluid w-100" src="<?php echo $image['url'] ?>" />
                                 <?php endif; ?>
                                 <h5><?php echo $work->post_title ?> / <span><?php echo implode(', ', $done) ?></span></h5>
                             </a>
