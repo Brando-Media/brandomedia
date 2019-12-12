@@ -29,13 +29,13 @@
 
                     <div class="col-lg-6 work-item <?php echo $class; ?>">
                         <div class="work-item-block">
-                            <a id="<?php echo $workpos ?>" href="<?php echo get_permalink($work->ID); ?>" rel=”follow”>
+                            <a alt="<?php echo $work->post_title ?>" id="<?php echo $workpos ?>" href="<?php echo get_permalink($work->ID); ?>" rel=”follow”>
                                 <?php if($image): ?>
                                     <img class="img-fluid w-100" src="<?php echo $image['url'] ?>" />
                                 <?php endif; ?>
                                 <h5><?php echo $work->post_title ?> / <span><?php echo implode(', ', $done) ?></span></h5>
                             </a>
-                        </div>
+                        </div> 
                     </div>
 
                     
@@ -45,7 +45,7 @@
                 <div style="height:40px; z-index:100;" class="showmoreworkbuttondiv">
                 <section id="buttonsection" class="section white-bg" data-section-name="show-more-work"  style="z-index:100; height:40px; !important;">
                 <div class="col-lg-12 show-btn-block" style="height:40px; margin-top:0px;">
-                    <a id="brandoele" href="#featuredworks" class="btn-block show-more-work" onclick="goToAnchor('4')">Show More work</a>
+                    <a  id="brandoele" href="#featuredworks" class="btn-block show-more-work" onclick="goToAnchor('4')">Show More work</a>
                 </div>
                 <!--</section>-->
                 </div>
