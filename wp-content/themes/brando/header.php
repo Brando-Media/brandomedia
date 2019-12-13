@@ -5,7 +5,7 @@
         <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Swift Studio</title>
-        <meta name="description" content="<?php bloginfo('description'); ?>">
+        <meta name="description" content="Welcome to Swift Studio, the home of creativity. Working out of our studio space in the heart of London, we deliver only the best quality of work while always continually learning to take on the ever changing landscape of our industry.">
         
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen">
         <link rel="alternate" type="text/xml" title="<?php bloginfo('name'); ?> RSS 0.92 Feed" href="<?php bloginfo('rss_url'); ?>">
