@@ -5,7 +5,7 @@
         </div><?php //#wrapper ?>
         <?php wp_footer(); ?>
         <script src="<?php bloginfo('template_directory'); ?>/javascript/script.js"></script>
-        <script src="<?php bloginfo('template_directory'); ?>/javascript/scrollify.js"></script>
+        <!--<script src="<?php bloginfo('template_directory'); ?>/javascript/scrollify.js"></script>-->
 
         <script>
         $.scrollify.disable();
