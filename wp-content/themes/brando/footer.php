@@ -331,11 +331,15 @@ $(function(){
     function hideMobileNav(){
         $(".header__list").fadeToggle("slow");
         $(".fadeclass").fadeToggle("slow");
-        if($("#fadeclassid").css("display")=="none"){
+        console.log(document.getElementById('fadeclassid').style.display + "display");
+        if(document.getElementById('fadeclassid').style.display == "none"){
+
+       /* }
+        if($("#fadeclassid").css("display")=="none"){*/
 
         }else{
            
-            /*$("#mobmenuwhite").toggleClass("menuwhitebg");
+            $("#mobmenuwhite").toggleClass("menuwhitebg");
             $(".mobile-logo").toggle();
             $(".white-logo").toggle();
             $(".red-logo").toggle();
@@ -345,7 +349,7 @@ $(function(){
             }else{
                 $(".white-logo").attr("src",test+"/assets/images/swiftsmallblack.png");
                 $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
-            }*/
+            }
         }
             
             $(".fadeclass").css("display","none");
