@@ -12,15 +12,16 @@
                         var test = '<?php echo bloginfo('template_directory'); ?>'; 
 
             function hideMobileNav(){
-                $(".header__list").fadeToggle("slow");
-
-                $("#mobmenuwhite").toggleClass("menuwhitebg");
-                $(".mobile-logo").toggle();
-                $(".white-logo").toggle();
-                $(".red-logo").toggle();
+                
                 if(document.getElementById('fadeclassid').style.display == "none"){
 
                 }else{
+                    $(".header__list").fadeToggle("slow");
+
+                    $("#mobmenuwhite").toggleClass("menuwhitebg");
+                    $(".mobile-logo").toggle();
+                    $(".white-logo").toggle();
+                    $(".red-logo").toggle();
                     if (document.getElementById('whitelogo').getAttribute('src') != test+"/assets/images/swiftsmalllogo.png"){
                         $(".white-logo").attr("src",test+"/assets/images/swiftsmalllogo.png");
                         $(".red-logo").attr("src",test+"/assets/images/swiftsmalllogo.png");
