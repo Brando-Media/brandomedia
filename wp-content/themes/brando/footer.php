@@ -335,17 +335,17 @@ $(function(){
 
         }else{
            
-            $("#mobmenuwhite").toggleClass("menuwhitebg");
+            /*$("#mobmenuwhite").toggleClass("menuwhitebg");*/
             $(".mobile-logo").toggle();
             $(".white-logo").toggle();
             $(".red-logo").toggle();
-            /*if (document.getElementById('whitelogo').getAttribute('src') != test+"/assets/images/swiftsmalllogo.png"){
+            if (document.getElementById('whitelogo').getAttribute('src') != test+"/assets/images/swiftsmalllogo.png"){
                 $(".white-logo").attr("src",test+"/assets/images/swiftsmalllogo.png");
                 $(".red-logo").attr("src",test+"/assets/images/swiftsmalllogo.png");
             }else{
                 $(".white-logo").attr("src",test+"/assets/images/swiftsmallblack.png");
                 $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
-            }*/
+            }
         }
             
             $(".fadeclass").css("display","none");
