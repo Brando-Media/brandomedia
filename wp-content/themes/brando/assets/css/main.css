@@ -1461,4 +1461,10 @@ textarea::placeholder {
   color: white;
 }
 
+@media only screen and (min-width: 1200px) {
+  .header .open-mob-menu-btn {
+    display: none !important;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

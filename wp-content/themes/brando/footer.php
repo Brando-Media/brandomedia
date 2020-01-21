@@ -330,7 +330,7 @@ $(function(){
     }
     function hideMobileNav(){
         $(".header__list").fadeToggle("slow");
-            $(".fadeclass").fadeToggle("slow");
+        $(".fadeclass").fadeToggle("slow");
         if($("#fadeclassid").css("display")=="none"){
 
         }else{
@@ -339,13 +339,13 @@ $(function(){
             $(".mobile-logo").toggle();
             $(".white-logo").toggle();
             $(".red-logo").toggle();
-            if (document.getElementById('whitelogo').getAttribute('src') != test+"/assets/images/swiftsmalllogo.png"){
+            /*if (document.getElementById('whitelogo').getAttribute('src') != test+"/assets/images/swiftsmalllogo.png"){
                 $(".white-logo").attr("src",test+"/assets/images/swiftsmalllogo.png");
                 $(".red-logo").attr("src",test+"/assets/images/swiftsmalllogo.png");
             }else{
                 $(".white-logo").attr("src",test+"/assets/images/swiftsmallblack.png");
                 $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
-            }
+            }*/
         }
             
             $(".fadeclass").css("display","none");
