@@ -330,7 +330,6 @@ $(function(){
     }
     function hideMobileNav(){
         console.log(document.getElementById('fadeclassid').style.display + "display1");
-        $(".header__list").fadeToggle("slow");
         console.log(document.getElementById('fadeclassid').style.display + "display2");
         if(document.getElementById('fadeclassid').style.display == "none"){
 
@@ -338,7 +337,7 @@ $(function(){
         if($("#fadeclassid").css("display")=="none"){*/
 
         }else{
-           
+            $(".header__list").fadeToggle("slow");           
             $("#mobmenuwhite").toggleClass("menuwhitebg");
             $(".mobile-logo").toggle();
             $(".white-logo").toggle();
