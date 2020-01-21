@@ -1455,4 +1455,9 @@ textarea::placeholder {
   background: white !important;
 }
 
+.footerdiv {
+  text-align: center;
+  background: #1e3b4c;
+}
+
 /*# sourceMappingURL=main.css.map */
