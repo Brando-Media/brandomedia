@@ -13,8 +13,7 @@
 
             function hideMobileNav(){
                 $(".header__list").fadeToggle("slow");
-                $(".fadeclass").fadeToggle("slow");
-                $(".fadeclass").css("display","none");
+
                 $("#mobmenuwhite").toggleClass("menuwhitebg");
                 $(".mobile-logo").toggle();
                 $(".white-logo").toggle();
@@ -30,6 +29,8 @@
                         $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
                     }
                 }
+                $(".fadeclass").fadeToggle("slow");
+                $(".fadeclass").css("display","none");
 
                     
                 
