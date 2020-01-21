@@ -439,5 +439,6 @@ $(function(){
         
     });
         </script>
+        <div class="footerdiv">Swift Studio Ltd © Copyright 2020</div>
     </body>
 </html>
