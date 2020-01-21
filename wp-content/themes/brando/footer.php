@@ -329,9 +329,10 @@ $(function(){
         }
     }
     function hideMobileNav(){
+        console.log(document.getElementById('fadeclassid').style.display + "display1");
         $(".header__list").fadeToggle("slow");
         $(".fadeclass").fadeToggle("slow");
-        console.log(document.getElementById('fadeclassid').style.display + "display");
+        console.log(document.getElementById('fadeclassid').style.display + "display2");
         if(document.getElementById('fadeclassid').style.display == "none"){
 
        /* }
