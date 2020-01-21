@@ -12,7 +12,7 @@
                         var test = '<?php echo bloginfo('template_directory'); ?>';
 
             function hideMobileNav(){
-                /*$(".header__list").fadeToggle("slow");
+                $(".header__list").fadeToggle("slow");
                 $(".fadeclass").fadeToggle("slow");
                 $(".fadeclass").css("display","none");
                 $("#mobmenuwhite").toggleClass("menuwhitebg");
@@ -25,28 +25,7 @@
                 }else{
                     $(".white-logo").attr("src",test+"/assets/images/swiftsmallblack.png");
                     $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
-                }*/
-                console.log(document.getElementById('fadeclassid').style.display + "display1");
-                $(".header__list").fadeToggle("slow");
-                console.log(document.getElementById('fadeclassid').style.display + "display2");
-                if(document.getElementById('fadeclassid').style.display == "none"){
-                    
-                }else{
-                
-                    $("#mobmenuwhite").toggleClass("menuwhitebg");
-                    $(".mobile-logo").toggle();
-                    $(".white-logo").toggle();
-                    $(".red-logo").toggle();
-                    if (document.getElementById('whitelogo').getAttribute('src') != test+"/assets/images/swiftsmalllogo.png"){
-                        $(".white-logo").attr("src",test+"/assets/images/swiftsmalllogo.png");
-                        $(".red-logo").attr("src",test+"/assets/images/swiftsmalllogo.png");
-                    }else{
-                        $(".white-logo").attr("src",test+"/assets/images/swiftsmallblack.png");
-                        $(".red-logo").attr("src",test+"/assets/images/swiftsmallorange.png");
-                    }
                 }
-                    $(".fadeclass").fadeToggle("slow");
-                    $(".fadeclass").css("display","none");
             }
 
             $(".open-mob-menu-btn").on("click", function() {
