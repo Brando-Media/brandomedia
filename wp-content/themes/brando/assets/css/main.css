@@ -726,7 +726,7 @@ button:disabled {
   background: #FF7F50;
   display: none;
   position: fixed;
-  z-index: 99;
+  z-index: 1;
 }
 
 .brand-icon-block {
