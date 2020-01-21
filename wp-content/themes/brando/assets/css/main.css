@@ -1118,7 +1118,7 @@ input.form-control {
   padding: 10px 15px;
 }
 .contact-form div.wpcf7-response-output.wpcf7-validation-errors, .contact-form div.wpcf7-response-output.wpcf7-acceptance-missing {
-  background: #d81516;
+  background: #1e3b4c;
   color: #fff;
 }
 .contact-form .ajax-loader {
@@ -1148,7 +1148,7 @@ input.form-control {
   position: absolute;
   right: 6px;
   top: 6px;
-  background: #d81516;
+  background: #1e3b4c;
   color: #fff;
   font-size: 12px;
   padding: 3px 12px;
