@@ -1526,4 +1526,8 @@ div .socialmedia-widget:first-child {
   content: "";
 }
 
+.socialmedia-widget a:hover {
+  text-decoration: unset !important;
+}
+
 /*# sourceMappingURL=main.css.map */

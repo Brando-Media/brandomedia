@@ -848,3 +848,7 @@ div .socialmedia-widget:first-child {
 .socialmedia-widget li.linkedin a::before {
     content: "\f0e1";
 } 
+
+.socialmedia-widget a:hover{
+    text-decoration: unset!important;
+}
