@@ -16,7 +16,7 @@ $sectionName = str_replace(' ', '', strtolower($title));
                 <?php echo do_shortcode('[contact-form-7 id="11" title="Contact Form"]') ?>
             </div>
             <div class="col-lg-6">
-                <div class="contact-details contact">
+                <div class="contact-details contacty">
                     <?php
                     echo $address ? "<p>{$address}</p>" : '';
                     echo $email ? "<p><a href='mailto:{$email}'>{$email}</a></p>" : '';
