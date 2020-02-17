@@ -23,11 +23,11 @@ $sectionName = str_replace(' ', '', strtolower($title));
                     echo $phone ? "<p><a href='tel:{$phone}'>{$phone}</a></p>" : '';
                     ?>
                 </div>
-                <div class="textwidget">
+                <div class="textwidget"> 
                     <ul class="socialmedia-widget normal-style normal align-left">
                         <li class="facebook"><a href="https://www.facebook.com/swiftstudio.co/" target="_blank" rel="noopener noreferrer"></a></li>
                         <li class="instagram"><a href="https://www.instagram.com/swift__studio1/?hl=en" target="_blank" rel="noopener noreferrer"></a></li>
-                        <li class="linkedin"><a href="https://www.linkedin.com/in/swift-studio-b82ab119a/" target="_blank" rel="noopener noreferrer"></a></li>
+                        <li class="linkedin"><a href="https://www.linkedin.com/in/swift-studio-b82ab119a/" target="_blank" rel="noopener noreferrer"></a></li> 
                     </ul>
                 </div>
             </div>
