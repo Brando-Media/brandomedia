@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "PangramBlack";
   src: url("../fonts/Pangram-Black.eot");
@@ -1465,6 +1466,64 @@ textarea::placeholder {
   .header .open-mob-menu-btn {
     display: none !important;
   }
+}
+div .socialmedia-widget:first-child {
+  background: transparent !important;
+  padding: 8px 0px !important;
+}
+
+div .socialmedia-widget:first-child {
+  padding: 8px 17px;
+  margin: 0;
+  background: #ffffff30;
+  width: 129px;
+}
+
+.socialmedia-widget {
+  margin: 15px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.socialmedia-widget li {
+  display: inline-block;
+  margin: 0;
+  position: relative;
+}
+
+.socialmedia-widget li:first-child a {
+  padding-left: 0;
+}
+
+.socialmedia-widget li a {
+  line-height: 20px;
+  color: white;
+  transition: all 0.2s ease;
+  display: block;
+  text-align: center;
+  padding: 0 7px 0 7px;
+}
+
+.socialmedia-widget li.facebook a::before {
+  content: "";
+}
+
+.socialmedia-widget li a::before {
+  display: block;
+  transition: all 0.3s ease;
+  font-family: FontAwesome;
+  font-size: 16px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.socialmedia-widget li.instagram a::before {
+  content: "";
+}
+
+.socialmedia-widget li.linkedin a::before {
+  content: "";
 }
 
 /*# sourceMappingURL=main.css.map */

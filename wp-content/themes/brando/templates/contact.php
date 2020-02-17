@@ -23,8 +23,16 @@ $sectionName = str_replace(' ', '', strtolower($title));
                     echo $phone ? "<p><a href='tel:{$phone}'>{$phone}</a></p>" : '';
                     ?>
                 </div>
+                <div class="textwidget">
+                    <ul class="socialmedia-widget normal-style normal align-left">
+                        <li class="facebook"><a href="http://facebook" target="_blank" rel="noopener noreferrer"></a></li>
+                        <li class="instagram"><a href="https://instagram.com/thepharma.cbd" target="_blank" rel="noopener noreferrer"></a></li>
+                        <li class="linkedin"><a href="http://www.linkeln.com" target="_blank" rel="noopener noreferrer"></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </section>
 <section></section>
+
